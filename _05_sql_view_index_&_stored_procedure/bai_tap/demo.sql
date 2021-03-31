@@ -39,4 +39,67 @@ drop view view_product;
 
 
 -- ____________________________--
+DELIMITER //
 
+CREATE PROCEDURE find_all_product()
+
+BEGIN
+
+  SELECT * FROM product;
+
+END //
+
+DELIMITER ;
+
+call find_all_product();
+
+
+DELIMITER //
+
+CREATE PROCEDURE add_new_product( product_code varchar(20), product_name varchar(20),  product_price float, product_amounts int, product_description text, product_status varchar(10))
+
+BEGIN
+	insert into product(`code`,`name`,price,amounts,`description`,`status`)
+	values ( product_code,product_name,product_price,product_amounts,product_description,product_status);
+END; //
+
+DELIMITER ;
+
+call add_new_product('P005','Black Shark','13000000','30','Black','FUll Box');
+
+select * from product;
+
+DELIMITER //
+
+CREATE PROCEDURE edit_product_by_id( product_id int,product_code varchar(20), product_name varchar(20),  product_price float, product_amounts int, product_description text, product_status varchar(10))
+
+BEGIN
+	update product
+    set `name` = product_name, 
+		`code` = product_code,
+        price = product_price,
+        amounts = product_amounts,
+        `description` = product_description,
+        `status` = product_status
+	where product.id = product_id;
+END; //
+
+DELIMITER ;
+
+call edit_product_by_id(1,'P001','IphoneXS MAX','30000000','50','Pink','Full Box');
+
+select * from product;
+
+DELIMITER //
+
+CREATE PROCEDURE delete_product_by_id( product_id int)
+
+BEGIN
+	delete from product where product.id = product_id;
+END; //
+
+DELIMITER ;
+
+call delete_product_by_id(2);
+
+select * from product;
