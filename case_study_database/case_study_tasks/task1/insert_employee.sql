@@ -10,5 +10,8 @@ insert into employees(employee_name,employee_birthday,employee_id_card,employee_
 values ('Đinh Văn Thăng','1992-01-09','111136779',1000,'0999399999','thang1992@gmail.com','Đà Nẵng',5,3,3),
 		('Trần Hồng Gia Đông','1995-10-09','444444444',1000,'0909394982','thgdong@gmail.com','Đà Nẵng',6,2,2),
 		('Hồ Quang Kha','1995-10-09','444444444',1000,'0909394982','kha@gmail.com','Đà Nẵng',6,2,2);
-
+insert into employees(employee_name,employee_birthday,employee_id_card,employee_salary,employee_phone,employee_email,employee_address,position_id,level_id,department_id)
+values ('Tôn Ngộ Không','1950-01-09','111111779',1000,'0999399999','ngokhong@gmail.com','Hải Châu',2,3,3),
+		('Trư Bát Giới','1960-10-09','444444444',1000,'0909394982','batgioi@gmail.com','Hải Châu',3,2,2),
+		('Sa Ngộ Tĩnh','1970-10-09','444444444',1000,'0909394982','satang@gmail.com','Hải Châu',4,4,2);
 select * from employees;
