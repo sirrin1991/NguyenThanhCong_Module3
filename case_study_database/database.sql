@@ -89,7 +89,6 @@ create table contracts(
     start_day date not null,
     end_day date not null,
     deposit float not null,
-    total float not null,
     employee_id int,
     customer_id int,
     service_id int,

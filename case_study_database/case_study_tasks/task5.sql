@@ -4,8 +4,8 @@ from contract_detail ctd
 join accompanied_service asv on asv.accompanied_service_id = ctd.accompanied_service_id
 group by ctd.contract_id;
 
-drop view total_accompanied_service_price;
 
+select * from total_accompanied_service_price;
 
 
 select distinct c.customer_id, c.customer_name , ct.customer_type_name,ctr.contract_id, 
