@@ -4,11 +4,13 @@ import model.bean.Users;
 import model.repository.UsersRepository;
 import model.repository.imp.UsersRepositoryImpl;
 import model.service.UsersService;
+import model.service.Validation;
 
 import java.util.List;
 
 public class UsersServiceImpl implements UsersService {
     private UsersRepository usersRepository = new UsersRepositoryImpl();
+
     @Override
     public List<Users> findAll() {
         return usersRepository.findAll();
@@ -25,13 +27,23 @@ public class UsersServiceImpl implements UsersService {
     }
 
     @Override
-    public boolean save(Users users) {
-        return usersRepository.save(users);
+    public String save(Users users) {
+
+        if (!Validation.validateName(users.getName())) {
+            return "name";
+        }
+        if (!Validation.validateEmail(users.getEmail())) {
+            return "email";
+        }
+        if (usersRepository.save(users)) {
+            return "ok";
+        }
+        return "false";
     }
 
     @Override
     public void update(int id, Users users) {
-        usersRepository.update(id,users);
+        usersRepository.update(id, users);
     }
 
     @Override
@@ -46,6 +58,6 @@ public class UsersServiceImpl implements UsersService {
 
     @Override
     public String transaction(int id1, int id2) {
-        return usersRepository.transaction(id1,id2);
+        return usersRepository.transaction(id1, id2);
     }
 }

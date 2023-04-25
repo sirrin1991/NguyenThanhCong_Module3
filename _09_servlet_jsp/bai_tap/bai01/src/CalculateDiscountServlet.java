@@ -23,7 +23,7 @@ public class CalculateDiscountServlet extends HttpServlet {
         request.setAttribute("discount",discount);
         request.setAttribute("discountAmount",discountAmount);
         request.setAttribute("newPrice",newPrice);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("display-discount.jsp");
-        requestDispatcher.forward(request,response);
+        RequestDispatcher a = request.getRequestDispatcher("display-discount.jsp");
+        a.forward(request,response);
     }
 }

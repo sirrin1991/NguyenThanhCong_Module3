@@ -1,0 +1,784 @@
+function I()
+{  
+    //CancelCal();
+    if(DE('r1')!=null){if(DE('r1').checked){hw('1');return;}}
+    if(DE('r2')!=null){if(DE('r2').checked){hw('2');return;}}
+    if(DE('r3')!=null){if(DE('r3').checked){hw('3');return;}}
+    if(DE('r4')!=null){if(DE('r4').checked){hw('4');return;}}
+    if(DE('r5')!=null){if(DE('r5').checked){hw('5');return;}}
+    if(DE('r6')!=null){if(DE('r6').checked){hw('6');return;}}
+    if(DE('r7')!=null){if(DE('r7').checked){hw('7');return;}}
+    if(DE('r8')!=null){if(DE('r8').checked){hw('8');return;}}
+    if(DE('r9')!=null){if(DE('r9').checked){hw('9');return;}}
+	var b = DE('BundleType').value;
+	if(b=='3'){hw('4');return;}
+	if(b=='7'){hw('5');return;}
+	if(b=='6'){hw('6');return;}
+	if(b=='5'){hw('7');return;}
+    //hw('');
+}
+
+function SO()
+{
+	var p = '';
+	if(typeof(bPageHasDCCoreOffer) != 'undefined')
+	{
+        if(bPageHasDCCoreOffer)
+	    {
+	        switch (cwid)
+	        {
+	            case '1':case '7':p = 'Flight';break;
+	            case '2':p = 'Hotel';break;
+	            case '3':p = 'Car';break;
+	            case '4':case '5':case '6':p = 'Package';break;
+	            case '8':p = 'Cruise';break;
+	            case '9':p = 'Activity';break;
+	        }
+	        setOffer(p);
+        }
+    }
+}
+
+function GetFields(t)
+{
+	sb.Reset();
+	switch (t)
+	{
+	    case 'F':
+	    case 'FH':
+	    case 'FHC':
+	    case 'FC':
+			sb.Concat('<div class="bl1">');
+			sb.Concat('<div class="flmed">' + GetGL('fcy','Leaving from:') + '<br/>' + GetCy(t,'F') + '</div>');
+			sb.Concat('<div class="frmed">' + GetGL('tcy','Going to:') + '<br/>' + GetCy(t,'T') + '</div>');
+			sb.Concat('</div>');
+			sb.Concat('<div class="bl1">');
+			sb.Concat('<div class="flmed">');
+			sb.Concat('<div class="fl">' + GetGL(FDateID,'Departing:') + '<br/>' + GetDt(t,'F') + '</div>');
+			sb.Concat('<div class="fr">' + GetGL('ftt','Time:') + '<br/>' + GetT(t,'F') + '</div>');
+			sb.Concat('</div>');
+			sb.Concat('<div class="frmed">');
+			sb.Concat('<div class="fl">' + GetGL(TDateID,'Returning:') + '<br/>' + GetDt(t,'T') + '</div>');
+			sb.Concat('<div class="fr">' + GetGL('ttt','Time:') + '<br/>' + GetT(t,'T') + '</div>');
+			sb.Concat('</div>');
+			sb.Concat('</div>');
+	        break;
+	    case 'FL':
+            tl = 'Don\'t see the city you\'re looking for?';
+            ti = tl;
+            te = 'Flexible-date searches are currently available only for our most popular routes. You can still search for flights in the usual way by putting in your departure and return dates.';
+			sb.Concat('<div class="bl1">' + GetGL('fct','Leaving from:') + '<br/>' + GetDD('fct',arrFD,FTLA,'large','',' onchange="Rem(this);"') + '</div>');
+			sb.Concat('<div class="bl1">' + GetGL('tct','Going to:') + '<br/>' + GetDD('tct',arrFD,TTLA,'large','',' onchange="Rem(this);"') + '</div>');
+            sb.Concat('<div class="bl1" style="padding-bottom:12px;">' + GetTT(tl,ti,te,0,'','',true) + '</div>');
+			sb.Concat('<div class="bl1">');
+			sb.Concat('<div class="flmed">' + GetGL('mon','Departure month:') + '<br/>' + GetM(nm,MDate,'','',' onchange="Rem(this);"') + '</div>');
+			sb.Concat('<div class="frmed">' + GetGL('trl','Trip length:') + '<br/>' + GetDD('trl',arrTL,TL,'','',' onchange="Rem(this);"') + '</div>');
+			sb.Concat('</div>');
+            sb.Concat('<div class="clearer"></div>');
+	        break;
+	    case 'H':
+			sb.Concat('<div class="bl1">' + GetGL('tcy','Destination:') + '<br/>' + GetCy(t,'T') + '</div>');
+			sb.Concat('<div class="bl1">');
+			sb.Concat('<div class="flmed">' + GetGL(FDateID,'Check-in:') + '<br/>' + GetDt(t,'F') + '</div>');
+			sb.Concat('<div class="frmed">' + GetGL(TDateID,'Check-out:') + '<br/>' + GetDt(t,'T') + '</div>');
+			sb.Concat('</div>');
+	        break;
+	    case 'C':
+            sb.Concat('<div class="bl1">');
+            sb.Concat('<div class="flmed">' + GetGL('tcy','Pick-up location:') + '<br/>' + GetCy(t,'T') + '</div>');
+            sb.Concat('<div class="frmed">' + GetGL('ccl','Car type:') + '<br/>' + GetDD('ccl',arrCC,CCl,'','',' onchange="Rem(this);"') + '</div>');
+            sb.Concat('</div>');
+            sb.Concat('<div class="bl1">');
+            sb.Concat('<div class="flmed">');
+            sb.Concat('<div class="fl">' + GetGL(FDateID,'Pick-up:') + '<br/>' + GetDt(t,'F') + '</div>');
+            sb.Concat('<div class="fr">' + GetGL('ftt','Time:') + '<br/>' + GetT(t,'F') + '</div>');
+            sb.Concat('</div>');
+            sb.Concat('<div class="frmed">');
+            sb.Concat('<div class="fl">' + GetGL(TDateID,'Drop-off:') + '<br/>' + GetDt(t,'T') + '</div>');
+            sb.Concat('<div class="fr">' + GetGL('ttt','Time:') + '<br/>' + GetT(t,'T') + '</div>');
+            sb.Concat('</div>');
+            sb.Concat('</div>');
+	        break;
+	    case 'HC':
+			sb.Concat('<div class="bl1">' + GetGL('tcy','Destination:') + '<br/>' + GetCy('H','T') + '</div>');
+			sb.Concat('<div class="bl1">');
+			sb.Concat('<div class="flmed">');
+			sb.Concat('<div class="fl">' + GetGL(FDateID,'Check-in:') + '<br/>' + GetDt(t,'F') + '</div>');
+			sb.Concat('<div class="fr">' + GetGL('ftt','Pick-up:') + '<br/>' + GetT('C','F') + '</div>');
+			sb.Concat('</div>');
+			sb.Concat('<div class="frmed">');
+			sb.Concat('<div class="fl">' + GetGL(TDateID,'Check-out:') + '<br/>' + GetDt(t,'T') + '</div>');
+			sb.Concat('<div class="fr">' + GetGL('ttt','Drop-off:') + '<br/>' + GetT('C','T') + '</div>');
+			sb.Concat('</div>');
+			sb.Concat('</div>');
+	        break;
+	    case 'Cr':
+			sb.Concat('<div class="bl1" style="padding-bottom:10px;">');
+			sb.Concat('<b>Note:</b> Cruise air and hotel stays are offered after you select the cruise.');
+			sb.Concat('</div>');
+			sb.Concat('<div class="bl1">' + GetGL('tci','Select a top destination:') + '<br/>' + GetDD('tci',arrTD,TCityId,'large','',' onchange="Rem(this);"') + '</div>');
+			sb.Concat('<div class="bl1">' + GetGL('mon','Departing in:') + '<br/>' + GetM(18,MDate,'','',' onchange="Rem(this);"') + '</div>');
+	        break;
+	}
+    sb.Concat('<div class="clearer"></div>');
+	return sb.GetValue();
+}
+
+function GetM(n,d,c,s,j)
+{
+	var dt = new Date();
+	var y = dt.getFullYear();
+	var dd = d;
+    var c1 = 'class="med" ';
+    var s1 = '';
+	if(c != ''){c1 = 'class="' + c + '" ';}
+	if(s != ''){s1 = 'style="' + s + '" ';}
+	dt = new Date();
+	var t = '<select id="mon" name="mon" ' + c1 + s1 + j +'>';
+	if (n == 18){t = t + '<option value="">Select a date</option>';}
+	if (n == 18){t = t + '<option value="1/1/4501">All dates</option>';}
+	for (i = 0; i < n; i++) 
+		{
+			t = t + '<option value="' + dt.getMonth() + '-' + dt.getFullYear() +'">' + arrMN[dt.getMonth()] + ' ' + dt.getFullYear() + '</option>';
+			dt.setMonth(dt.getMonth() + 1,1);
+		} 
+	t = t + '</select>';
+	return t.replace('value="' + dd + '"','value="' + dd + '" selected="selected"');
+}
+
+function SetCC()
+{
+    var d = DE('divCC');
+	if (d != null)
+	{
+		if (cwid == '7'){SH(d,1);d.innerHTML = '<div class="bl1">' + GetGL('ccl','Car type:') + '<br/>' + GetDD('ccl',arrCC,CCl,'','',' onchange="Rem(this);"') + '</div><div class="clearer"></div>';}
+		else{SH(d,0);}
+	}
+}
+
+function GetR(j)
+{
+	var t = '';
+	var tt = '';
+	rooms = GetRC();
+	t = t + '<select id="rrr" name="rrr"' + j + '>';
+	for (i = minR; i < (maxR + 1); i++)
+	{
+		tt = i == 9 ? '+' : '';
+		if (i == rooms){t = t + '<option value=' + i + ' selected>' + i + tt + '</option>';}
+		else {t = t + '<option value=' + i + '>' + i + tt +'</option>';}
+	} 
+	t = t + '</select>';
+	return t;
+}
+
+function GetA(r,s,j)
+{
+	var t = '';
+	var nA = parseInt(aRA[r - 1]);
+	if (s==false)
+	{
+		var nS = parseInt(aRS[r - 1]);
+		if ((nA + nS) <= maxA){nA = nA + nS;}
+	}
+	if (nA > maxA){nA = 1;}
+	var ddName = 'rad' + r;
+	t = t + '<select id="' + ddName + '" name="' + ddName + '"' + j + '>';
+	for (i = minA; i < (maxA + 1); i++) 
+		{
+			if (i == nA){t = t + '<option value=' + i + ' selected>' + i + '</option>';}
+			else{t = t + '<option value=' + i + '>' + i + '</option>';}
+		} 
+	t = t + '</select>';
+	return t;
+}
+
+function GetS(r,j)
+{
+	var t = '';
+	var ddName = 'rse' + r;
+	t = t + '<select id="' + ddName + '" name="' + ddName + '"' + j + '>';
+
+	for (i = minS; i < (maxS + 1); i++) 
+		{
+			if (i ==  aRS[r - 1]){t = t + '<option value=' + i + ' selected>' + i + '</option>';}
+			else{t = t + '<option value=' + i + '>' + i + '</option>';}
+		} 
+	t = t + '</select>';
+	return t;
+}
+
+function GetC(r,j)
+{
+	var t = '';
+	var s = '';
+	if(aRC[r - 1] > maxC){s = maxC;}else{s = aRC[r - 1];}
+	var ddName = 'rch' + r;
+	t = t + '<select id="' + ddName + '" name="' + ddName + '"' + j + '>';
+	for (i = minC; i < (maxC + 1); i++) 
+		{
+			if (i == s){t = t + '<option value=' + i + ' selected>' + i + '</option>';}
+			else{t = t + '<option value=' + i + '>' + i + '</option>';}
+		} 
+	t = t + '</select>';
+	return t;
+}
+
+function GetCA(r,c,j)
+{
+	var t = '';
+	var ddName = 'rca' + r + '_' + c;
+	t = t + '<select id="' + ddName + '" name="' + ddName + '" ' + j + '>';
+	if (aRCA[r - 1][c - 1] == -1){t = t + '<option value="-1" selected>-?-</option>';}
+	else{t = t + '<option value="-1">-?-</option>';}
+	if (aRCA[r - 1][c - 1] == 0){t = t + '<option value="0" selected>&lt;1</option>';}
+	else{t = t + '<option value="0">&lt;1</option>';}
+	for (i = 1; i < 19; i++) 
+		{
+			if (i ==  aRCA[r - 1][c - 1]){t = t + '<option value=' + i + ' selected>' + i + '</option>';}
+			else{t = t + '<option value=' + i + '>' + i + '</option>';}
+		} 
+	t = t + '</select>';
+	return t;
+}
+
+function SetRASC(n,s)
+{
+	var h = '';
+	var t = '(19+)';
+	if(s){t = '(19-64)'};
+	
+	if(DE('aRA').value == ''){aRA = GetDefault('A').split(',');}
+	if(DE('aRS').value == ''){aRS = GetDefault('S').split(',');}
+	if(DE('aRC').value == ''){aRC = GetDefault('C').split(',');}
+	if(DE('aRCA').value == ''){aRCA = GetDefault('CA');}
+
+	rooms = GetRC();
+	
+	if ((cwid == '4') || (cwid == '5') || (cwid == '6')){maxC = 5;}	else{maxC = 6;}
+	if (cwid == '2')
+	{
+	    if (rooms == 9){maxA = 99; minA = 9;maxC = 99;}
+	    else {maxA = 14; minA = 1;}
+	}
+	else
+	{
+	    maxA = 6;
+	}
+	
+	sb.Reset();
+	if (n == 1)
+	{
+		sb.Concat('<div class="bl1">');
+		sb.Concat('<div class="flrasc">' + GetGL('rad1','Adults ' + t + ':') + '<br/>' + GetA(1,s,' onchange="Rem(this);"') + '</div>');
+		sb.Concat('<div class="flrasc">' + GetGL('rse1','Seniors (65+):') + '<br/>' + GetS(1,' onchange="Rem(this);"') + '</div>');
+		sb.Concat('<div class="flrasc">' + GetGL('rch1','Children (0-18):') + '<br/>' + GetC(1,' onchange="Rem(this);SetCA(' + n + ',' + s + ');"') + '</div>');
+		sb.Concat('</div>');
+        sb.Concat('<div class="clearer"></div>');
+	}
+	else if (n == 2)
+	{
+        for (var j = 1; j < (parseInt(rooms) + 1); j++)
+        {
+	        if (j == 1)
+	        {
+		        sb.Concat('<div class="bl1">');
+		        sb.Concat('<div class="flrasc1"><br/>' + GetGL('rrr','Rooms:') + '<br/>' + GetR(' onfocus="HCal();" onchange="Rem(this);SetRASC(' + n + ',' + s + ');"') + '</div>');
+		        if (rooms == 1 || rooms == 9)
+			        {
+		                sb.Concat('<div class="flrasc2">&nbsp;</div>');
+		            }
+		        else
+			        {
+		                sb.Concat('<div class="flrasc2"><br/><br/>Room ' + j + '</div>');
+		            }
+		        sb.Concat('<div class="flrasc1">' + GetGL('rad1','Adults <br/>' + t + ':') + '<br/>' + GetA(j,s,' onchange="Rem(this);"') + '</div>');
+		        if(s)
+		        {
+		            sb.Concat('<div class="flrasc1">' + GetGL('rse1','Seniors <br/>(65+):') + '<br/>' + GetS(j,' onchange="Rem(this);"') + '</div>');
+		        }
+		        sb.Concat('<div class="flrasc3">' + GetGL('rch1','Children <br/>(0-18):') + '<br/>' + GetC(j,' onchange="Rem(this);SetCA(' + n + ',' + s + ');"') + '</div>');
+		        sb.Concat('</div>');
+		        if(rooms == 9) {break;}
+	        }
+	        else
+	        {
+		        sb.Concat('<div class="bl1">');
+		        sb.Concat('<div class="flrasc1">&nbsp;</div>');
+		        sb.Concat('<div class="flrasc2">Room ' + j + '</div>');
+		        sb.Concat('<div class="flrasc1">' + GetA(j,s,' onchange="Rem(this);"') + '</div>');
+		        if(s)
+		        {
+		            sb.Concat('<div class="flrasc1">' + GetS(j,' onchange="Rem(this);"') + '</div>');
+		        }
+		        sb.Concat('<div class="flrasc3">' + GetC(j,' onchange="Rem(this);SetCA(' + n + ',' + s + ');"') + '</div>');
+		        sb.Concat('</div>');
+	        }
+        }
+        sb.Concat('<div class="clearer"></div>');
+    }
+    h = sb.GetValue();
+    var d = DE('divRASC');
+	if (d != null)
+	{
+		if (h != ''){SH(d,1);d.innerHTML = h;}
+		else{SH(d,0);}
+	}
+	if (rooms == 9)
+	{
+	    SH(DE('divCA'),0);
+	}
+	else
+	{
+		SetCA(n,s);
+	} 
+	if (cwid==2){SetST(cwid);}
+}
+
+function SetCA(n,s)
+{
+	sb.Reset();
+	var h = '';
+	var nC = 0;
+	var ddC;
+	var i;
+	var j;
+	var cat = 1;
+	var CA = false;
+	var cu = '';
+	rooms = GetRC();
+	
+	if (rooms == '9'){return;}
+	if (n > 0)
+	{
+	    for (i = 1; i < (parseInt(rooms) + 1); i++)
+		    {
+			    ddC = DE('rch' + i);
+			    if (ddC != null){nC = parseInt(ddC.options[ddC.selectedIndex].value);if (nC > 0){CA = true;break;}}
+		    }
+	}
+	if (CA)
+	{
+		if (n == 1){cat = 0;}
+		if (s){cu = 'ChildUpdate();';}
+		sb.Concat('<div class="bl3">' + GetCAText(cat) + '</div>');
+		if(n == 1)
+		{
+			ddC = DE('rch1');
+			nC = parseInt(ddC.options[ddC.selectedIndex].value);
+			sb.Concat('<div class="bl1">');
+			for (i = 1; i < (nC + 1); i++)
+			{
+		        sb.Concat('<div class="flca1">' + GetGL('rca1_' + i,'Child ' + i + ':') + '<br/>' + GetCA(1,i,' onchange="Rem(this);' + cu + '"') + '</div>');
+			}
+			sb.Concat('</div>');
+			sb.Concat(GetInfantHTML());
+		}
+		else if(n == 2)
+		{
+			for (j = 1; j < (parseInt(rooms) + 1); j++)
+			{
+				ddC = DE('rch' + j);
+				if (ddC != null)
+				{
+					nC = parseInt(ddC.options[ddC.selectedIndex].value);
+					if (nC > 0)
+					{
+			            sb.Concat('<div class="bl1">');
+		                sb.Concat('<div class="flca"><br/>Room ' + j + '</div>');
+			            sb.Concat('<div class="flca2">');
+				        for (i = 1; i < (nC + 1); i++)
+				        {
+		                    sb.Concat('<div class="flca1">' + GetGL('rca' + j + '_' + i,'Child ' + i + ':') + '<br/>' + GetCA(j,i,' onchange="Rem(this);' + cu + '"') + '</div>');
+				        }
+			            sb.Concat('</div>');
+			            sb.Concat('</div>');
+                        sb.Concat('<div class="clearer"></div>');
+					}
+				}
+			}
+			sb.Concat(GetInfantHTML());
+		}
+        sb.Concat('<div class="clearer"></div>');
+        sb.Concat('<div class="clearer"></div>');
+	}
+    h = sb.GetValue();
+    var d = DE('divCA');
+	if (d != null)
+	{
+		if (h != ''){SH(d,1);d.innerHTML = h;if(s){ChildUpdate()};}
+		else{SH(d,0);}
+	}
+}
+
+function GetRC()
+{
+	if(nR > maxR){return maxR;}else{return nR;}
+}
+
+function GetCAText(n)
+{
+    var t = new Array('We will search for any applicable airfare discounts.<br><a href="/pub/agent.dll?qscr=hgen&rhtx=HTX_FLTSRCH_RT&hfnm=h_FW_default.htx#travs">Airline age rules and unaccompanied minors</a>', 'Discounts may be offered to children of certain ages.');
+	return '<b>Specify ages of children at time of travel:</b><br>' + t[n];
+}
+
+function GetInfantHTML()
+{
+	var t = '';
+	var Check1 = '';
+	var Check2 = '';
+	if (Inf == 'l'){Check2 = 'checked="checked"';}
+	if (Inf == 's'){Check1 = 'checked="checked"';}
+	var cl = 'chkFF';
+	if (document.all){cl = 'chkIE'}
+	t = t + '<div id="divHBWinf" class="bl2" style="display:none;padding-top:8px;">';
+	t = t + '<b>Infants (under 2):</b><br/>';
+	t = t + '<input id="rIL" name="infs" type="radio" value="2" ' + Check2 + ' onclick="Rem(this);" class="' + cl + '" /><label for="rIL">laps</label>&nbsp;&nbsp;';
+	t = t + '<input id="rIS" name="infs" type="radio" value="1" ' + Check1 + ' onclick="Rem(this);" class="' + cl + '" /><label for="rIS">seats</label>';
+	//t = t + '<input id="rIL" type="radio" value="2" name="infs" ' + Check2 + ' onclick="Rem(this);" />laps';
+	//t = t + '<input id="rIS" type="radio" value="1" name="infs" ' + Check1 + ' onclick="Rem(this);" />seats';
+	t = t + '</div>';
+	return t;
+}
+
+function ChildUpdate()
+{
+	var bI = false;
+	var nCA = -1;
+	for (var i = 1; i < (maxR + 1); i++)
+	{
+		for (var j = 1; j < (maxC + 1); j++)
+		{
+			dd = DE('rca' + i + '_' + j);
+			if (dd != null)
+			{
+				nCA = dd.options[dd.selectedIndex].value;
+				if ((nCA == 0) || (nCA == 1)){bI = true;break;}
+			}
+		}
+		if (bI){break;}
+	}
+	dd = DE('divHBWinf');
+	if (dd != null)
+	{
+		if (bI){SH(dd,1);}
+		else{SH(dd,0);}
+	}
+}
+
+function SetSearchType()
+{
+	var b = DE('BundleType');
+	if (cwid == '1'){b.value = 1;}
+	if (cwid == '2'){b.value = 2;}
+	if (cwid == '3'){b.value = 4;}
+	if (cwid == '4'){b.value = 3;}
+	if (cwid == '5'){b.value = 7;}
+	if (cwid == '6'){b.value = 6;}
+	if (cwid == '7'){b.value = 5;}
+	if (cwid == '8'){b.value = 8;}
+	if (cwid == '9'){b.value = 9;}
+}
+
+function SetSTG()
+{
+    sb.Reset();
+    sb.Concat('<div style="float:right;">');
+    sb.Concat('<div style="clear:both;">');
+    sb.Concat('<div style="float:left;">');
+    sb.Concat('<div class="wizBtnLB" onclick="SF();" onmouseover="stmo(\'' + SText + '\');" tabindex="0">');
+    sb.Concat('<div class="wizBtnRB">');
+    sb.Concat('<div class="wizBtnMB">' + SText + '</div>');
+    sb.Concat('</div></div></div></div>');
+    //if(SText == "Search for flights" && (!DE('flx') || !DE('flx').checked))
+    if(cwid == '1' && !bFlex)
+    {
+        sb.Concat('<div style="clear:both;">');
+        sb.Concat('<div style="float:left;margin-top:8px;">');
+        sb.Concat('<div class="wizBtnLB" onclick="SFBundle(3);" onmouseover="stmo(\'Search for flights \+ hotels \');" tabindex="0">');
+        sb.Concat('<div class="wizBtnRB">');
+        sb.Concat('<div class="wizBtnMB">Search for flights + hotels</div>');
+        sb.Concat('</div></div></div></div>');
+    }
+    sb.Concat('</div>');
+    sb.Concat('<div class="clearer"></div>');
+
+    SetIH('divWst',sb.GetValue());
+}
+
+function stmo(wst){window.status = wst;}
+
+function SetTeleMessage()
+{
+	var tele = DE('divTele');
+	switch (cwid)
+	{
+		case '1':case '2':case '3':case '7':case '8':case '9':SH(tele,0);break;
+		case '4':case '5':case '6':SH(tele,1);break;
+	}
+}
+
+function GetGI(i,d,c,s,j,m)
+{
+    var c1 = 'class="med" ';
+    var s1 = '';
+    var m1 = 'maxlength="255"';
+	if(document.all){s1 = 'margin-top:-1px;margin-bottom:-1px;';}
+	if(c != ''){c1 = 'class="' + c + '" ';}
+	if(s != '' || s1 != ''){s1 = 'style="' + s + s1 + '" ';}
+	if(m != ''){m1 = 'maxlength="' + m + '" ';}
+	return '<input id="' + i + '" name="' + i + '" value="' + d + '" type="text" ' + m1 + c1 + s1 + j + ' />';
+}
+
+function GetGL(i,t){return '<label for="' + i +'" style="cursor:default;">' + t + '</label>';}
+
+function GetDD(i,a,d,c,s,j)
+{
+    var a1;
+    var d1 = '';
+    var c1 = 'class="med" ';
+    var s1 = '';
+	if(c != ''){c1 = 'class="' + c + '" ';}
+	if(s != ''){s1 = 'style="' + s + '" ';}
+	for (var k = 0; k < a.length; k++) 
+		{
+			a1 = a[k].split('|');
+			d1 = d1 + '<option value="' + a1[0] + '">' + a1[1] + '</option>';
+		} 
+    d1 = '<select id="' + i + '" name="' + i + '" ' + c1 + s1 + j + '>' + d1 + '</select>';
+	return d1.replace('value="' + d + '"','selected="selected" value="' + d + '"');
+}
+
+function GetCB(i,v,t,d,c,s,j)
+{
+	var chk = '';
+	var v1 = '';
+    var c1 = 'class="med" ';
+    var c2 = 'class="chkFF" ';
+    if(document.all){c2 = 'class="chkIE" ';}
+    var s1 = '';
+	if(v != ''){v1 = 'value="' + v + '" ';}
+	if(c != ''){c1 = 'class="' + c + '" ';}
+	if(s != ''){s1 = 'style="' + s + '" ';}
+	if(d == '1'){chk = 'checked="checked" ';}
+	//return '<label ' + c1 + '><input id="' + i + '" name="' + i.substr(0,3) + '" type="checkbox" ' + v1 + chk + s1 + j + ' />' + t + '</label>';
+	
+	return '<input id="' + i + '" name="' + i.substr(0,3) + '" type="checkbox" ' + v1 + chk + c2 + s1 + j + ' /><label for="' + i +'" ' + c1 + '>' + t + '</label>';
+}
+
+function GetCy(t,n)
+{
+    var c = '';
+    if(t == 'H'){c = 'large';}
+	if (n == 'F'){return GetGI('fcy',FCity,c,'',' autocomplete="off" onchange="Rem(this);" onfocus="HCal();this.select();"','100');}
+	else if (n == 'T'){return GetGI('tcy',GetDestination(),c,'',' autocomplete="off" onchange="Rem(this);" onfocus="HCal();this.select();"','100');}
+}
+
+function GetDt(t,n)
+{
+    var c = 'small';
+    if(t == 'H'){c = '';}
+	if (n == 'F'){return GetGI(FDateID,FDate,c,'',' onblur="Rem(this);UpdDt(this);" onclick="event.cancelBubble=true;SC(this);" onfocus="SC(this);"','12');}
+	else if (n == 'T'){return GetGI(TDateID,TDate,c,'',' onblur="Rem(this);" onclick="event.cancelBubble=true;SC(this);" onfocus="SC(this);"','12');}
+}
+
+function UpdDt(e)
+{    
+    switch(e.id)
+    {
+        case FDateID:
+            var f = DE(FDateID);
+            var t = DE(TDateID);
+            break;
+        case "pfd":
+            var f = DE('pfd');
+            var t = DE('ptd');
+            break;
+        default:
+            var f = null;
+            var t = null;
+            break;
+    }
+	
+	//alert(f.value +' '+ t.value);
+
+    if(null!=f&&null!=t&&null!=GetInputDate(f.value)&&(null==GetInputDate(t.value)||GetInputDate(f.value)>GetInputDate(t.value))){t.value=f.value;}    
+}
+
+function GetT(t,n)
+{
+    var d = FTime;
+    var a = arrT1;
+    if(n == 'T'){d = TTime;}
+    if(t == 'C'){a = arrT1.slice(0,25).slice(1,25);if((d.indexOf('AM') < 0 && d.indexOf('PM') < 0) || d == '0AM'){d = '11AM';}}
+	if (n == 'F'){return GetDD('ftt',a,d,'small','',' onchange="Rem(this);" onfocus="HCal();"');}
+	else if (n == 'T'){return GetDD('ttt',a,d,'small','',' onchange="Rem(this);" onfocus="HCal();"');}
+}
+
+function sd(e,c)
+{
+   var t = '';
+   if(c != ''){t = ' class="' + c + '"';}
+   return '<div' + t + '>' + e + '</div>';
+}
+
+function SetIH(id,v){var e = DE(id);e.innerHTML = '';e.innerHTML = v;}
+
+function Trim(s)
+{
+	var st = s.toString();
+	while(st.charAt(0) == ' '){st = st.substring(1);}
+	while(st.charAt(st.length - 1) == ' '){st = st.substring(0,st.length-2);}
+	return st;
+}
+
+function DE(el){return document.getElementById(el);}
+
+function SH(e,s){if(s){e.style.display = 'block';}else{e.style.display = 'none';}}
+
+var aS = new Array();
+function SB(){this.Concat = Concat;this.GetValue = GetValue;this.Reset = Reset;}
+function Concat(StringToConcat){this.aS[this.aS.length] = StringToConcat;}
+function GetValue(){return this.aS.join('');}
+function Reset(){this.aS = null;this.aS = new Array();}
+
+function SC(el)
+{
+	if (DE('CalFrame') == null){return;}
+	var id = el.id;
+	var n = el.id.substr(FDateID.length);
+	if (id.substr(0,FDateID.length) == FDateID)
+	{
+		el.select();
+		if(n == ''){ShowCalendar(el,el,null,CalS,CalE);}
+		else if(n == '2'){ShowCalendar(el,el,DE(FDateID),CalS,CalE);}
+		else{ShowCalendar(el,el,DE(FDateID + (n - 1)),CalS,CalE);}
+	}
+	if (id.substr(0,TDateID.length) == TDateID){el.select();ShowCalendar(el,el,DE(FDateID),CalS,CalE);}
+	if (id.substr(0,3) == 'pfd'){el.select();ShowCalendar(el,el,DE(FDateID),CalS,CalE);}
+	if (id.substr(0,3) == 'ptd'){el.select();ShowCalendar(el,el,DE('pfd'),CalS,CalE);}
+}
+    
+function HCal(e)
+{
+	var c = DE('CalFrame');
+	//if (c!=null){SH(c,false);}
+	if (c!=null){CancelCal();}
+	var d;
+	d = DE(FDateID);
+	if (d!=null){d.value = d.value;}
+	d = DE(TDateID);
+	if (d!=null){d.value = d.value;}
+}
+
+function SrvyCheck()
+{
+	var aWiz = {'1':'1','2':'4','3':'3','4':'9','5':'9','6':'9','7':'9','8':'6','9':'28'};
+	var aRate = {'1':58,'2':159,'3':1491,'4':331,'5':331,'6':331,'7':331,'8':2500,'9':1600};
+	QualifiedForSurvey(aWiz[cwid], true, 45, aRate[cwid]);
+	return;
+}
+
+function SFBundle(bundleId)
+{
+    DE("BundleType").value = bundleId;
+    SF();
+}
+
+function SF()
+{
+	SrvyCheck();
+	MacIEHack();
+	document.Wiz.submit();
+}
+
+function enter(e){var k;if(e.keyCode){k=e.keyCode;}if(e.which){k=e.which;}if(k=='13'){e.cancelBubble=true;SF();}}
+
+function GetTT(tl,ti,te,w,bc,i,f)
+{
+    var w1 = 250;
+    var bc1 = '666666';
+    var i1 = '/eta/tip_icon.gif';
+    var i2 = '';
+    if(f){i2 = '<img src="/eta/tip_icon.gif" alt="" style="margin-right:3px;" />';}
+    
+    if(w != ''){w1 = w;}
+    if(bc != ''){bc1 = bc;}
+    if(i != ''){i1 = i;}
+
+    return i2 + '<a href="#" onmouseover="stmo(\'' + tl.replace(/\'/g,'\\\'') + '\');return true;" onmouseout="stmo(\'\');return true;" onclick="event.cancelBubble=true;STT(this,\'' + ti.replace(/\'/g,'\\\'') + '\',\'' + te.replace(/\'/g,'\\\'') + '\',' + w1 + ',\'' + bc1 + '\',\'' + i1 + '\');return false;">' + tl + '</a>';
+}
+
+function MacIEHack()
+{
+    var dd;
+    var nc = 0;
+    var ua = navigator.userAgent;
+    if(ua.indexOf('MSIE') > -1 && ua.indexOf('Mac') > -1)
+    {
+	    switch (cwid)
+	    {
+	        case '1':case '7':case '2':case '4':case '5':case '6':
+	            aRA = GetDefault('A').split(',');
+	            aRS = GetDefault('S').split(',');
+	            aRC = GetDefault('C').split(',');
+	            aRCA = GetDefault('CA');
+	            for(var i = 1; i <= nR; i++)
+	            {
+	                dd = DE('rad' + i);
+	                aRA[i-1] = dd.options[dd.selectedIndex].value;
+	                dd = DE('rse' + i);
+	                if(dd!=null){aRS[i-1] = dd.options[dd.selectedIndex].value;}
+	                dd = DE('rch' + i);
+	                nc = dd.options[dd.selectedIndex].value;
+	                aRC[i-1] = nc;
+	                if (nc > 0)
+	                {
+                        for (var j = 1; j <= nc; j++)
+                        {
+                            dd = DE('rca' + i + '_' + j);
+                            aRCA[i-1][j-1] = dd.options[dd.selectedIndex].value;
+                        }
+	                }
+	            }
+		        DE('aRA').value = aRA.join('|');
+		        DE('aRS').value = aRS.join('|');
+		        DE('aRC').value = aRC.join('|');
+		        DE('aRCA').value = aRCA.join('|');
+	            break;
+	        case '3':case '8':case '9':
+	            break;
+	    }
+	    if(cwid!='2'&&cwid!='8'&&cwid!='9')
+	    {
+	        dd=DE('ftt');DE('FTime').value=dd.options[dd.selectedIndex].value;
+	        dd=DE('ttt');DE('TTime').value=dd.options[dd.selectedIndex].value;
+	    }
+	    if(cwid=='8'){dd=DE('mon');DE('MDate').value=dd.options[dd.selectedIndex].value;}
+    }
+}
+
+function ecsf(){document.ec.submit();}
+function ece(e){var k;if(e.keyCode){k=e.keyCode;}if(e.which){k=e.which;}if(k=='13'){e.cancelBubble=true;ecsf();}}
+
+function getObj(objID)
+{
+    if (document.getElementById) {return document.getElementById(objID);}
+    else if (document.all) {return document.all[objID];}
+    else if (document.layers) {return document.layers[objID];}
+}
+
+var g_rgFreeEventElements=new Array();
+g_rgFreeEventElements[0] = window;
+function AddFreeEventElement(elm){FreeEventsOnUnLoad(); g_rgFreeEventElements[g_rgFreeEventElements.length]=elm;}
+var g_clearElementProps = ['onmouseover','onmouseout','onmousedown','onmouseup','onmousemove','onclick','onkeypress','onkeydown','onkeyup','onblur','onfocus',];
+var g_fFreeEventOnUnLoad = false;
+function FreeEventsOnUnLoad()
+{
+	if (!g_fFreeEventOnUnLoad)
+	{
+	    if (window.attachEvent){window.attachEvent("onunload", function(){var el;for(var d = g_rgFreeEventElements.length;d--;){el = g_rgFreeEventElements[d];for(var c = g_clearElementProps.length;c--;){el[g_clearElementProps[c]] = null;}}});}
+	    g_fFreeEventOnUnLoad=true;	
+	}
+}
+

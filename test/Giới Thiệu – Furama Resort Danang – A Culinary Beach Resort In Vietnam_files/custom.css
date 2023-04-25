@@ -1,0 +1,24 @@
+.catalog-widget-inside > a:first-child:after{
+    display: none !important;
+}
+.rt-tpg-container .layout2 .rt-holder .rt-detail h2, .rt-tpg-container .layout2 .rt-holder .rt-detail h3, .rt-tpg-container .layout2 .rt-holder .rt-detail h4{
+    font-size: 18px !important;    
+    
+}
+.slick-slide{
+    padding: 0 7px 30px !important;
+}
+.custombox-content{
+    z-index: 99999999999999999999  !important;
+    margin-top: 80px;
+}
+.slick-slide{
+    padding: 0 0px 30px !important;
+}
+.whitexmas {
+    color: #ffffff !important;
+    
+}
+.header-nav .navbar-nav .nav-link{
+    padding: 20px 12px !important;
+}

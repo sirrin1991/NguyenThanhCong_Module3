@@ -7,14 +7,14 @@
 <body>
 <h2>Create Product</h2>
 <p>
-    <c:if test='${requestScope["message"] != null}'>
-        <span class="message">${requestScope["message"]}</span>
+    <c:if test='${message != null}'>
+        <span class="message">${message}</span>
     </c:if>
 </p>
 <p>
     <a href="/products">Back to product list</a>
 </p>
-<form action="/products?action=create" method="post">
+<form action="/?action=create" method="post">
     <fieldset>
         <legend>Product's information:</legend>
         <input type="text" name="name" placeholder="Product's name"><br><br>

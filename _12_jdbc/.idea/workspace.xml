@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5ac13c0b-81ae-4121-96f4-de70d92b51ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../_08_basic_bootstrap/bai_tap/1123123.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_08_basic_bootstrap/bai_tap/example.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_09_servlet_jsp/bai_tap/bai01/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai03/.idea/artifacts/bai03_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai03/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai03/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai03/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai03/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai03/bai03.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai03/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai03/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai04/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai04/.idea/artifacts/bai04_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai04/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai04/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai04/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai04/bai04.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai04/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai04/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/.idea/libraries/jstl_1_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/.idea/libraries/mysql_connector_java_8_0_111.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/artifacts/thuc_hanh_war_exploded/WEB-INF/classes/model/service/Validation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/artifacts/thuc_hanh_war_exploded/WEB-INF/classes/model/service/common/EmailException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/production/thuc_hanh/model/service/Validation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/production/thuc_hanh/model/service/common/EmailException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/src/model/service/Validation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/src/model/service/common/EmailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_13_querying_transaction/ex/.idea/artifacts/ex_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_13_querying_transaction/ex/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_13_querying_transaction/ex/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_13_querying_transaction/ex/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_13_querying_transaction/ex/ex.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_13_querying_transaction/ex/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_13_querying_transaction/ex/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/6.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/6.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/build/classes/java/main/controller/UsersServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/build/classes/java/main/model/bean/Users.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/build/classes/java/main/model/repository/BaseRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/build/classes/java/main/model/repository/UsersRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/build/classes/java/main/model/repository/imp/UsersRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/build/classes/java/main/model/service/UsersService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/build/classes/java/main/model/service/imp/UsersServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/build/libs/bai_tap-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/src/main/java/controller/UsersServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/src/main/java/model/bean/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/src/main/java/model/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/src/main/java/model/repository/UsersRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/src/main/java/model/repository/imp/UsersRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/src/main/java/model/service/UsersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/src/main/java/model/service/imp/UsersServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/src/main/webapp/view/addpermision.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/src/main/webapp/view/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_14_gradle/bai_tap/src/main/webapp/view/search.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.gradle/6.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.gradle/6.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/build/classes/java/main/controller/StudentServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/build/classes/java/main/model/bean/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/build/classes/java/main/model/repository/BaseRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/build/classes/java/main/model/repository/StudentRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/build/classes/java/main/model/repository/impl/StudentRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/build/classes/java/main/model/service/StudentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/build/classes/java/main/model/service/impl/StudentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/build/libs/c12g-dependency-management-packaging-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/java/controller/StudentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/java/model/bean/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/java/model/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/java/model/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/java/model/repository/impl/StudentRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/java/model/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/java/model/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/js/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/list_by_jstl.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/result_transaction.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-dependency-management-packaging/src/main/webapp/update_student.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/.idea/artifacts/c12g_jdbc_crud_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/.idea/libraries/jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/.idea/libraries/mysql_connector_java_8_0_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/artifacts/c12g_jdbc_crud_war_exploded/WEB-INF/classes/controller/StudentServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/artifacts/c12g_jdbc_crud_war_exploded/WEB-INF/classes/model/bean/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/artifacts/c12g_jdbc_crud_war_exploded/WEB-INF/classes/model/repository/BaseRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/artifacts/c12g_jdbc_crud_war_exploded/WEB-INF/classes/model/repository/StudentRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/artifacts/c12g_jdbc_crud_war_exploded/WEB-INF/classes/model/repository/impl/StudentRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/artifacts/c12g_jdbc_crud_war_exploded/WEB-INF/classes/model/service/StudentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/artifacts/c12g_jdbc_crud_war_exploded/WEB-INF/classes/model/service/impl/StudentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/artifacts/c12g_jdbc_crud_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/artifacts/c12g_jdbc_crud_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/artifacts/c12g_jdbc_crud_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/artifacts/c12g_jdbc_crud_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/artifacts/c12g_jdbc_crud_war_exploded/list_by_jstl.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/artifacts/c12g_jdbc_crud_war_exploded/update_student.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/production/c12g-jdbc-crud/controller/StudentServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/production/c12g-jdbc-crud/model/bean/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/production/c12g-jdbc-crud/model/repository/BaseRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/production/c12g-jdbc-crud/model/repository/StudentRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/production/c12g-jdbc-crud/model/repository/impl/StudentRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/production/c12g-jdbc-crud/model/service/StudentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/out/production/c12g-jdbc-crud/model/service/impl/StudentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/src/controller/StudentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/src/model/bean/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/src/model/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/src/model/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/src/model/repository/impl/StudentRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/src/model/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/src/model/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/web/list_by_jstl.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-crud/web/update_student.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/.idea/artifacts/c12g_jdbc_transaction_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/.idea/libraries/jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/.idea/libraries/mysql_connector_java_8_0_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/c12g-jdbc-transaction.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/artifacts/c12g_jdbc_transaction_war_exploded/WEB-INF/classes/controller/StudentServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/artifacts/c12g_jdbc_transaction_war_exploded/WEB-INF/classes/model/bean/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/artifacts/c12g_jdbc_transaction_war_exploded/WEB-INF/classes/model/repository/BaseRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/artifacts/c12g_jdbc_transaction_war_exploded/WEB-INF/classes/model/repository/StudentRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/artifacts/c12g_jdbc_transaction_war_exploded/WEB-INF/classes/model/repository/impl/StudentRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/artifacts/c12g_jdbc_transaction_war_exploded/WEB-INF/classes/model/service/StudentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/artifacts/c12g_jdbc_transaction_war_exploded/WEB-INF/classes/model/service/impl/StudentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/artifacts/c12g_jdbc_transaction_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/artifacts/c12g_jdbc_transaction_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/artifacts/c12g_jdbc_transaction_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/artifacts/c12g_jdbc_transaction_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/artifacts/c12g_jdbc_transaction_war_exploded/list_by_jstl.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/artifacts/c12g_jdbc_transaction_war_exploded/result_transaction.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/artifacts/c12g_jdbc_transaction_war_exploded/update_student.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/production/c12g-jdbc-transaction/controller/StudentServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/production/c12g-jdbc-transaction/model/bean/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/production/c12g-jdbc-transaction/model/repository/BaseRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/production/c12g-jdbc-transaction/model/repository/StudentRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/production/c12g-jdbc-transaction/model/repository/impl/StudentRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/production/c12g-jdbc-transaction/model/service/StudentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/out/production/c12g-jdbc-transaction/model/service/impl/StudentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/src/controller/StudentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/src/model/bean/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/src/model/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/src/model/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/src/model/repository/impl/StudentRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/src/model/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/src/model/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/web/list_by_jstl.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/web/result_transaction.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-jdbc-transaction/web/update_student.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/.idea/artifacts/c12g_mvc_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/.idea/libraries/jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/artifacts/c12g_mvc_war_exploded/WEB-INF/classes/META-INF/c12g-mvc.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/artifacts/c12g_mvc_war_exploded/WEB-INF/classes/controller/StudentServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/artifacts/c12g_mvc_war_exploded/WEB-INF/classes/model/bean/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/artifacts/c12g_mvc_war_exploded/WEB-INF/classes/model/repository/StudentRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/artifacts/c12g_mvc_war_exploded/WEB-INF/classes/model/repository/impl/StudentRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/artifacts/c12g_mvc_war_exploded/WEB-INF/classes/model/service/StudentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/artifacts/c12g_mvc_war_exploded/WEB-INF/classes/model/service/impl/StudentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/artifacts/c12g_mvc_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/artifacts/c12g_mvc_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/artifacts/c12g_mvc_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/artifacts/c12g_mvc_war_exploded/list_by_jstl.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/artifacts/c12g_mvc_war_exploded/update_student.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/production/c12g-mvc/META-INF/c12g-mvc.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/production/c12g-mvc/controller/StudentServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/production/c12g-mvc/model/bean/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/production/c12g-mvc/model/repository/StudentRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/production/c12g-mvc/model/repository/impl/StudentRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/production/c12g-mvc/model/service/StudentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/out/production/c12g-mvc/model/service/impl/StudentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/src/controller/StudentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/src/model/bean/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/src/model/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/src/model/repository/impl/StudentRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/src/model/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/src/model/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/web/list_by_jstl.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/c12g-mvc/web/update_student.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/build/classes/java/main/controller/StudentServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/build/classes/java/main/model/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/build/libs/demo-paging-sorting-jsp-servlet-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/java/controller/StudentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/java/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/bootstrap413/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/css/dataTables.bootstrap4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/css/dataTables.bootstrap4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/css/dataTables.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/css/dataTables.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/css/dataTables.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/css/dataTables.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/css/dataTables.semanticui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/css/dataTables.semanticui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/css/jquery.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/css/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/js/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/js/dataTables.bootstrap4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/js/dataTables.bootstrap4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/js/dataTables.foundation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/js/dataTables.foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/js/dataTables.jqueryui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/js/dataTables.jqueryui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/js/dataTables.semanticui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/js/dataTables.semanticui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/datatables/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/jquery/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/demo-paging-sorting-jsp-servlet/src/main/webapp/test-paging-sorting.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/06-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/Ariyana-Tourism-Complex-02-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/DES-PHONGNHA-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/HOI-AN-map-marker-1-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/HUE-map-marker-1-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/IMG_583221-763x563.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/MY-SON-map-marker-1-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/PHONG-NHA-map-marker-1-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/Vietnam_Danang_Furama_Resort_Exterior_Beach-2-763x563.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/Vietnam_Danang_Furama_Resort_Exterior_Courtyard-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/app.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/bookform.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/bootstrap.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/bubble_left_onblue.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/bubble_right_onblue.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/button.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/cal.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/calx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/calx.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/common.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/controls.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/core.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/css(1)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/css(2)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/css(3)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/css(4)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/d.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/datepicker.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/dflip.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/dflip.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/drag-quick-call-button.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/e.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/furama-HONEYMOON-PACKAGE-800-590-763x563.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/google_gray.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/google_white5_hdpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/hotw.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/ihover.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/imagesloaded.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/instafeed.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/isotope.pkgd.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/jquery-migrate.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/jquery.c.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/jquery.cookie.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/jquery.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/jquery.mCustomScrollbar.concat.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/jquery.mCustomScrollbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/jquery.magnific-popup.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/jquery.waypoints.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/js_composer.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/js_composer_front.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/logo@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/map-marker-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/map.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/marker.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/mobmenu-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/mobmenu.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/nouislider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/nouislider.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/onion.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/popper.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/popupaoc-public-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/quick-call-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/retina.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/saved_resource(1).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/saved_resource.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/script.js(1).download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/script.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/scripts.js(1).download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/scripts.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/search-cookie.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/simple-banner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/simple-banner.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/slick.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/slick.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/spinner.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/stats.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/sticky.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/style(1).css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/style(2).css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/style(3).css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/style(4).css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/style(5).css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/themify-icons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/thepostgrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/titan-framework-mobmenu-css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/transparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/trunk8.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/uaf.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/util.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(1)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(10)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(11)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(12)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(13)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(14)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(15)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(16)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(17)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(2)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(3)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(4)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(5)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(6)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(7)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(8)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/vt(9)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/widget-tripadvisor-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/widget-tripadvisor-rating.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/widget.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/world-hotel-F-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/wp-default-norm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/wp-embed.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/wpfront-notification-bar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/Giới Thiệu – Furama Resort Danang – A Culinary Beach Resort In Vietnam_files/wpfront-notification-bar.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/abc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/fr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_08_basic_bootstrap/bai_tap/SimpleGallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_08_basic_bootstrap/bai_tap/SimpleGallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_09_servlet_jsp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_09_servlet_jsp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_09_servlet_jsp/bai_tap/bai01/out/artifacts/bai01_war_exploded/WEB-INF/classes/CalculateDiscountServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_09_servlet_jsp/bai_tap/bai01/out/artifacts/bai01_war_exploded/WEB-INF/classes/CalculateDiscountServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_09_servlet_jsp/bai_tap/bai01/out/artifacts/bai01_war_exploded/display-discount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../_09_servlet_jsp/bai_tap/bai01/out/artifacts/bai01_war_exploded/display-discount.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_09_servlet_jsp/bai_tap/bai01/out/artifacts/bai01_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../_09_servlet_jsp/bai_tap/bai01/out/artifacts/bai01_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_09_servlet_jsp/bai_tap/bai01/out/production/bai01/CalculateDiscountServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_09_servlet_jsp/bai_tap/bai01/out/production/bai01/CalculateDiscountServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_09_servlet_jsp/bai_tap/bai01/src/CalculateDiscountServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../_09_servlet_jsp/bai_tap/bai01/src/CalculateDiscountServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_09_servlet_jsp/bai_tap/bai01/web/display-discount.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../_09_servlet_jsp/bai_tap/bai01/web/display-discount.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_09_servlet_jsp/bai_tap/bai01/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../_09_servlet_jsp/bai_tap/bai01/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai01/out/artifacts/bai01_war_exploded/WEB-INF/classes/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai01/out/artifacts/bai01_war_exploded/WEB-INF/classes/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai01/out/artifacts/bai01_war_exploded/WEB-INF/classes/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai01/out/artifacts/bai01_war_exploded/WEB-INF/classes/CustomerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai01/out/artifacts/bai01_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai01/out/artifacts/bai01_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai01/out/production/bai01/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai01/out/production/bai01/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai01/out/production/bai01/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai01/out/production/bai01/CustomerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai01/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai01/src/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai01/src/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai01/src/CustomerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai01/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai01/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai02/out/artifacts/bai02_war_exploded/WEB-INF/classes/CalculateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai02/out/artifacts/bai02_war_exploded/WEB-INF/classes/CalculateServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai02/out/artifacts/bai02_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai02/out/artifacts/bai02_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai02/out/production/bai02/CalculateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai02/out/production/bai02/CalculateServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai02/src/CalculateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai02/src/CalculateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai02/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai02/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai02/web/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/bai_tap/bai02/web/result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/thuc_hanh/bai_01/out/artifacts/bai_01_war_exploded/WEB-INF/classes/ConvertServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/thuc_hanh/bai_01/out/artifacts/bai_01_war_exploded/WEB-INF/classes/ConvertServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/thuc_hanh/bai_01/out/artifacts/bai_01_war_exploded/convert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/thuc_hanh/bai_01/out/artifacts/bai_01_war_exploded/convert.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/thuc_hanh/bai_01/out/production/bai_01/ConvertServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/thuc_hanh/bai_01/out/production/bai_01/ConvertServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_10_jsp_jstl/thuc_hanh/bai_01/src/ConvertServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../_10_jsp_jstl/thuc_hanh/bai_01/src/ConvertServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_11_mvc_model/bai_tap/out/artifacts/bai_tap_war_exploded/WEB-INF/classes/model/repository/imp/ProductRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_11_mvc_model/bai_tap/out/artifacts/bai_tap_war_exploded/WEB-INF/classes/model/repository/imp/ProductRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_11_mvc_model/bai_tap/out/artifacts/bai_tap_war_exploded/WEB-INF/classes/model/service/imp/ServiceRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_11_mvc_model/bai_tap/out/artifacts/bai_tap_war_exploded/WEB-INF/classes/model/service/imp/ServiceRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_11_mvc_model/bai_tap/out/artifacts/bai_tap_war_exploded/view/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../_11_mvc_model/bai_tap/out/artifacts/bai_tap_war_exploded/view/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_11_mvc_model/bai_tap/out/production/bai_tap/model/repository/imp/ProductRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_11_mvc_model/bai_tap/out/production/bai_tap/model/repository/imp/ProductRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_11_mvc_model/bai_tap/out/production/bai_tap/model/service/imp/ServiceRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_11_mvc_model/bai_tap/out/production/bai_tap/model/service/imp/ServiceRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_11_mvc_model/bai_tap/src/model/repository/imp/ProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../_11_mvc_model/bai_tap/src/model/repository/imp/ProductRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_11_mvc_model/bai_tap/src/model/service/imp/ServiceRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../_11_mvc_model/bai_tap/src/model/service/imp/ServiceRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_11_mvc_model/bai_tap/web/view/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../_11_mvc_model/bai_tap/web/view/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_11_mvc_model/thuc_hanh/web/customer/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../_11_mvc_model/thuc_hanh/web/customer/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database_thuc_hanh/database_demo.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database_thuc_hanh/database_demo.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/.idea/artifacts/thuc_hanh_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/.idea/artifacts/thuc_hanh_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/artifacts/thuc_hanh_war_exploded/WEB-INF/classes/controller/UsersServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/artifacts/thuc_hanh_war_exploded/WEB-INF/classes/controller/UsersServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/artifacts/thuc_hanh_war_exploded/WEB-INF/classes/model/service/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/artifacts/thuc_hanh_war_exploded/WEB-INF/classes/model/service/UsersService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/artifacts/thuc_hanh_war_exploded/WEB-INF/classes/model/service/imp/UsersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/artifacts/thuc_hanh_war_exploded/WEB-INF/classes/model/service/imp/UsersServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/artifacts/thuc_hanh_war_exploded/view/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/artifacts/thuc_hanh_war_exploded/view/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/production/thuc_hanh/controller/UsersServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/production/thuc_hanh/controller/UsersServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/production/thuc_hanh/model/service/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/production/thuc_hanh/model/service/UsersService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/production/thuc_hanh/model/service/imp/UsersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/out/production/thuc_hanh/model/service/imp/UsersServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/src/controller/UsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/src/controller/UsersServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/src/model/service/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/src/model/service/UsersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/src/model/service/imp/UsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/src/model/service/imp/UsersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/thuc_hanh.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/thuc_hanh.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/web/view/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../_13_querying_transaction/bai_tap/web/view/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/../test/test.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1tIu5TsTOc0oDiBp6bLBvl1WxeU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/thuc_hanh" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ac13c0b-81ae-4121-96f4-de70d92b51ea" name="Default Changelist" comment="" />
+      <created>1622468740197</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622468740197</updated>
+      <workItem from="1622468742439" duration="123000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1622468865780">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1622468865780" />
+  </component>
+</project>

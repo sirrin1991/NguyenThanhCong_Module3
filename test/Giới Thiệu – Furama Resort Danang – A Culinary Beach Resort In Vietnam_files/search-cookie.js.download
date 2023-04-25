@@ -1,0 +1,121 @@
+jQuery(document).ready(function($) {
+	
+	$('#modalBooking').on('show.bs.modal', function (e) {
+		$('#mail_sent_success').text('');
+		$('#mail_sent_failed').text('');
+	})
+	
+    $('#categoriesform').submit(function(e) {
+        e.preventDefault();
+        var startDate = document.getElementById("start-date").value;
+        var endDate = document.getElementById("end-date").value;
+        var rates = document.getElementsByName('room_type');
+        var roomType = '';
+        for (var i = 0; i < rates.length; i++) {
+            if (rates[i].checked) {
+                roomType = rates[i].value;
+                break;
+            }
+        }
+        var formAction = $(this).attr("action");
+        createCookie('start_date', startDate, 1);
+        createCookie('end_date', endDate, 1);
+        createCookie('room_type', roomType, 1);
+        var room = document.getElementById("room").value;
+        var adult = document.getElementById("adult").value;
+        var child = document.getElementById("child").value;
+        var night = document.getElementById("night").value;
+        createCookie('room', room, 1);
+        createCookie('adult', adult, 1);
+        createCookie('child', child, 1);
+        createCookie('night', night, 1);
+        window.location.href = formAction;
+    });
+    $('#reservation_form').submit(function(e) {
+        e.preventDefault();
+        var startDate = document.getElementById("check_in").value;
+        var endDate = document.getElementById("check_out").value;
+        var rates = document.getElementsByName('room_type_popup');
+        var roomType = '';
+        for (var i = 0; i < rates.length; i++) {
+            if (rates[i].checked) {
+                roomType = rates[i].value;
+                break;
+            }
+        }
+        var formAction = $(this).attr("action");
+        createCookie('start_date', startDate, 1);
+        createCookie('end_date', endDate, 1);
+        createCookie('room_type', roomType, 1);
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var room = document.getElementById("room_1").value;
+        var adult = document.getElementById("adult_1").value;
+        var child = document.getElementById("child_1").value;
+        var night = document.getElementById("night_1").value;
+		var reservation_nonce = document.getElementById("reservation_nonce").value;
+		
+        createCookie('room', room, 1);
+        createCookie('adult', adult, 1);
+        createCookie('child', child, 1);
+        createCookie('night', night, 1);
+        $.ajax({
+            type: "POST",
+            url: bestel_js_object.ajax_url,
+            data: {
+                check_in: startDate,
+                check_out: endDate,
+                room_type: roomType,
+                name: name,
+                email: email,
+                phone: phone,
+                room: room,
+                adult: adult,
+                child: child,
+                night: night,
+                action: 'send_reservation_email',
+				reservation_nonce:reservation_nonce
+            },
+            success: function(response) {
+                res = JSON.parse(response);
+                if (res.result == 'success') {
+                    $('#mail_sent_success').text('Reservation Mail Send Successfully');
+                    setTimeout(function() {
+                        $('.modal').modal('hide');
+                    }, 2000);
+                } else {
+                    $('#mail_sent_failed').text('Failed to send');
+                }
+            },
+            error: function() {
+                $('#sent').text('Some error occurs');
+            }
+        });
+    });
+})
+
+function createCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
+function eraseCookie(name) {
+    createCookie(name, "", -1);
+}

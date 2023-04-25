@@ -202,13 +202,19 @@ public class UsersServlet extends HttpServlet {
         String email = request.getParameter("email");
         String address = request.getParameter("address");
         Users user = new Users(name, email, address);
-        boolean check = usersService.save(user);
+        String check = usersService.save(user);
         String msg = null;
-        if (check) {
-            msg = "Update successfully!";
-        } else {
-            msg = "Create failed";
-        }
+//        if(check == "name"){
+            msg = "Input false";
+            request.setAttribute("mes", check);
+            try {
+                request.getRequestDispatcher("view/create.jsp").forward(request, response);
+            } catch (ServletException | IOException e) {
+                e.printStackTrace();
+            }
+//            return;
+//        }
+        msg = "Update successfully!";
         request.setAttribute("mes", msg);
         try {
             request.getRequestDispatcher("view/create.jsp").forward(request, response);

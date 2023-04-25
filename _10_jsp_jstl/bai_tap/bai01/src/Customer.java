@@ -4,6 +4,9 @@ public class Customer {
     private String address;
     private String img;
 
+    public Customer() {
+    }
+
     public Customer(String name, String dayOfBirth, String address, String img) {
         this.name = name;
         this.dayOfBirth = dayOfBirth;

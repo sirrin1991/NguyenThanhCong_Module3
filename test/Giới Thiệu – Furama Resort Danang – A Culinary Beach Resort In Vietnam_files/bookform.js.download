@@ -1,0 +1,207 @@
+var zz, zv, d, fTSR;
+d = new Date();
+fTSR=0;
+zv = d.getTime();
+zz = "&zz="+zv;
+
+var gBF=false;
+function GoTo(u){window.top.location = u + zz;}
+function Go(u){window.top.location = u;} 
+
+function BF(){gBF=true;}
+
+function Foci(o){if(!gBF && IsVis(o)){o.focus();}}
+
+function IsVis(o)
+{
+	if(!o || o.type=="hidden")
+	return false;
+	
+	while(o && o.style && o.style.display!='none')
+	{
+	o = o.parentNode;	
+	}
+	return !o || !o.style;
+}
+
+function TEK(a){if(13==event.keyCode){event.cancelBubble=true;event.returnValue=false;eval(a);}}
+
+function getObj(objID)
+	{
+	if (document.getElementById) {return document.getElementById(objID);}
+	else if (document.all) {return document.all[objID];}
+	else if (document.layers) {return document.layers[objID];}
+	}
+	
+function objNext(f,d)
+{
+	var fFnd=false,el=f.elements,i=0;
+	for(;i < el.length;i++)
+	{
+	if('hidden'!=el[i].type && false==el[i].disabled && IsVis(el[i]) && fFnd)return el[i];
+	if(d.id==el[i].id)fFnd=true;
+	}
+	return null;
+}
+function objPrev(f,d)
+{
+	var fFnd=false,el=f.elements,i=el.length - 1;
+	for(;i >= 0;i--)
+	{
+	if('hidden'!=el[i].type && false==el[i].disabled && IsVis(el[i]) && fFnd)return el[i];
+	if(d.id==el[i].id)fFnd=true;
+	}
+	return null;
+}
+
+var rgOnLoad=new Array();
+function AddLoadFn(szfn){window.onload=RunLoadFn;rgOnLoad[rgOnLoad.length]=szfn;}
+function RunLoadFn(){for(var i=0;i<rgOnLoad.length;i++)eval(rgOnLoad[i]);}
+
+function RegisterClick(r)
+{
+
+	var zv = (new Date()).getTime();
+	getObj("rfrrImg").src="agent.dll?qscr=live&rfrr="+r+"&zz="+zv;
+
+}
+function WriteCookie(c)
+{
+	document.cookie=c
+}
+
+//Create by MR TOAN
+function addDate(dateString,num){
+    var dateOnMonth = new Array(31,28,31,30,31,30,31,31,30,31,30,31);
+    var dateArray = new Array();
+    var reStr = "";
+    
+    var date, month, year;
+    
+    dateArray = dateString.split("/");
+    
+    date = parseInt(dateArray[1]);
+    month = parseInt(dateArray[0]);
+    year = parseInt(dateArray[2]);
+        
+    if(year % 4 == 0){
+        dateOnMonth[1]++;
+    }
+    
+    date += num;
+    while(date > dateOnMonth[month-1]){
+        date -= dateOnMonth[month-1];
+        if(month == 12){
+            month = 1;
+            year ++;
+        }
+        else{
+            month++;
+        }
+    }
+    
+    reStr = month + "/" + date + "/" + year;
+    return reStr;
+}
+
+function GetToDateStart(txtFromDate){
+    var toDate = addDate(document.getElementById(txtFromDate).value,1);
+    return toDate;
+}
+//End of Mr Toan's functions
+
+function GHNCheckAvail(lang,Itemid, HotelName) {
+	date1Field = document.getElementById('date1');
+	date2Field = document.getElementById('date2');
+	cadu1Field = document.getElementById('cadu1');
+	ckdr1Field = document.getElementById('ckdr1');
+	ratecodeField = document.getElementById('ratecode');
+	if (date1Field.value=='') {
+		alert('You have not select Check-in date!');
+		return false;
+	}
+	if (date2Field.value=='') {
+		alert('You have not select Check-out date!');
+		return false;
+	}
+	//openPopup('http://www.gethotelnow.com/checkresult-10.aspx?lang='+lang+'&hid=-10&date1='+date1Field.value+'&date2='+date2Field.value+'&cadu1='+cadu1Field.value+'&ckdr1='+ckdr1Field.value+'&ratecode='+ratecodeField.value);
+	
+	//location.href = '/crowne/index.php?option=com_chronocontact&chronoformname=OnlineReservations&lang='+lang+'&date1='+date1Field.value+'&date2='+date2Field.value+'&cadu1='+cadu1Field.value+'&ckdr1='+ckdr1Field.value;
+	
+	
+	//destination = '/crowne/index.php?option=com_chronocontact&chronoformname=OnlineReservations&lang=vi&date1='+encodeURIComponent(date1Field.value)+'&date2='+encodeURIComponent(date2Field.value)+'&cadu1='+cadu1Field.value+'&ckdr1='+ckdr1Field.value;
+	
+	//alert(destination);
+	
+	//location.href = destination;
+	
+	//openPopup('index.php?option=com_chronocontact&chronoformname=Reservations&Itemid=8&lang='+lang+'&hid=-10&date1='+date1Field.value+'&date2='+date2Field.value+'&cadu1='+cadu1Field.value+'&ckdr1='+ckdr1Field.value+'&ratecode='+ratecodeField.value);
+	//openPopup('https://www.yourreservation.net/ibe/HADADFUR/main.html;jsessionid=51D948C4F09F7FFC14AC1A9FAEC8A097.node1?_flowExecutionKey=_cC2302AC6-3EF0-F4A1-B5B1-14C802B5B39E_k1524CB4F-4066-929F-5D82-37D4AC33F2D4');
+       //openPopup('https://www.yourreservation.net/tb3/index.cfm?bf=HADADFUR&arrivaldate='+toV3date(date1Field.value)+'&departuredate='+toV3date(date2Field.value)+'&rateAccessCode='+ratecodeField.value);
+	   
+	   //openPopup('https://www2.yourreservation.net/tb3/index.cfm?bf=HADADFUR&arrivaldate='+toV3date(date1Field.value)+'&departuredate='+toV3date(date2Field.value)+'&iataNumber=&lng=EN');
+	
+	//openPopup('https://www.myhotelreservation.net/b/hadadfur/HADADFUR/?f='+toV3date(date1Field.value)+'&t='+toV3date(date2Field.value)+'&lang=en_US');
+	openPopup('https://be.synxis.com/?Hotel=3818&arrive='+toV3date(date1Field.value)+'&depart='+toV3date(date2Field.value)+'&promo='+ratecodeField.value);
+	   
+	return false;
+}
+
+function GHNCheckAvail2(lang) {
+	date1Field = document.getElementById('date1');
+	date2Field = document.getElementById('date2');
+	cadu1Field = document.getElementById('cadu1');
+	ckdr1Field = document.getElementById('ckdr1');
+	ratecodeField = document.getElementById('ratecode');
+	if (date1Field.value=='') {
+		alert('You have not select Check-in date!');
+		return false;
+	}
+	if (date2Field.value=='') {
+		alert('You have not select Check-out date!');
+		return false;
+	}
+	
+	openPopup('http://www.gethotelnow.com/checkresult-10.aspx?lang='+lang+'&hid=-10&date1='+date1Field.value+'&date2='+date2Field.value+'&cadu1=1&ckdr1=0&ratecode='+ratecodeField.value);
+	
+	//location.href = '/crowne/index.php?option=com_chronocontact&chronoformname=OnlineReservations&lang='+lang+'&date1='+date1Field.value+'&date2='+date2Field.value+'&cadu1='+cadu1Field.value+'&ckdr1='+ckdr1Field.value;
+	
+	
+	//destination = '/crowne/index.php?option=com_chronocontact&chronoformname=OnlineReservations&lang=vi&date1='+encodeURIComponent(date1Field.value)+'&date2='+encodeURIComponent(date2Field.value)+'&cadu1='+cadu1Field.value+'&ckdr1='+ckdr1Field.value;
+	
+	//alert(destination);
+	
+	//location.href = destination;
+	
+	//openPopup('index.php?option=com_chronocontact&chronoformname=Reservations&Itemid=8&lang='+lang+'&hid=-10&date1='+date1Field.value+'&date2='+date2Field.value+'&cadu1='+cadu1Field.value+'&ckdr1='+ckdr1Field.value+'&ratecode='+ratecodeField.value);
+	//openPopup('https://www.yourreservation.net/ibe/HADADFUR/main.html;jsessionid=51D948C4F09F7FFC14AC1A9FAEC8A097.node1?_flowExecutionKey=_cC2302AC6-3EF0-F4A1-B5B1-14C802B5B39E_k1524CB4F-4066-929F-5D82-37D4AC33F2D4');
+       //openPopup('https://www.yourreservation.net/tb3/index.cfm?bf=HADADFUR&arrivaldate='+toV3date(date1Field.value)+'&departuredate='+toV3date(date2Field.value)+'&rateAccessCode='+ratecodeField.value);
+	
+	return false;
+}
+
+function toV3date(date) {
+	dateArr = date.split("/");
+	month = dateArr[0];
+	if (parseInt(month)<=9) month = "0" + month;
+	day = dateArr[1];
+	if (parseInt(day)<=9) day = "0" + day;
+	year = dateArr[2];
+	return year + "-" + month + "-" + day;
+}
+
+function openPopup(url)
+{    
+  var w = 1200;
+  var h = 600;
+  var wleft = (screen.width - w) / 2;
+  var wtop = (screen.height - h) / 2 - 40;
+  
+  var win=window.open(url,"_blank","toolbar=no,location=no,directories=no,status=yes,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width="+w+",height="+h+",top="+wtop+",left="+wleft);
+  /*  
+  win.resizeTo(w, h);
+  // Just in case left and top are ignored
+  win.moveTo(wleft, wtop);
+  win.focus();
+  */
+}

@@ -6,17 +6,17 @@
 </head>
 <body>
 <h2>Create Customer</h2>
-<p style="color: red">${mes}</p>
+
 <p>
     <a href="/users">Back to customer list</a>
 </p>
 <form action="/users?action=create" method="post">
     <fieldset>
         <legend>Customer's information:</legend>
-        <input type="text" name="name" placeholder="User's name"><br><br>
-        <input type="text" name="email" placeholder="User's email"><br><br>
-        <input type="text" name="address" placeholder="User's address"><br><br>
-        <input type="submit" value="Submit">
+        <input type="text" name="name" placeholder="User's name"><p style="color: red">${mes}</p>
+        <input type="text" name="email" placeholder="User's email"><p style="color: red">${mes}</p>
+        <input type="text" name="address" placeholder="User's address"><p style="color: red">${mes}</p>
+        <input type="submit" value="Submit"><p style="color: red">${mes}</p>
     </fieldset>
 </form>
 </body>

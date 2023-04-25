@@ -53,5 +53,7 @@
             </div>
         </div>
     </div>
+
+    <input type="text" class="form-control" value="<%=request.getAttribute("anhtung")%>" readonly>
 </body>
 </html>

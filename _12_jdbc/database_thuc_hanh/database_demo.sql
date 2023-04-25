@@ -20,7 +20,7 @@ create table user_permission (
 	user_id int,
     permission_id int,
     primary key(user_id,permission_id),
-    foreign key(user_id) references users(id),
+    foreign key(user_id) references users(id) ,
     foreign key(permission_id) references permission(id)
 
 );
@@ -52,8 +52,16 @@ end;
 
 call find_all();
 
+DELIMITER //
+create procedure delete_user(id int)
+begin
 delete from users
-where id = 1;
+where users.id = id;
+end;
+// DELIMITER ;
+
+call delete_user(4);
+truncate table user_permission;
 
 DELIMITER //
 create procedure edit_user( id int, new_name varchar(45), new_email varchar(45), new_address varchar(45))

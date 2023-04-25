@@ -20,7 +20,7 @@ public class CustomerServlet extends HttpServlet {
         list.add(new Customer("Adam Levine","18/03/1979","USA",""));
         list.add(new Customer("Bruno Mars","08/10/1985","USA",""));
         list.add(new Customer("Adele","05/05/1988","UK",""));
-        request.setAttribute("listCustomer", list);
+        request.setAttribute("list", list);
 //        request.getRequestDispatcher("/index.jps").forward(request, response);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.jsp");
         requestDispatcher.forward(request, response);

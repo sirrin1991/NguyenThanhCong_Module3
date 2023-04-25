@@ -49,7 +49,7 @@
           <th>Address</th>
           <th>Picture</th>
       </tr>
-      <c:forEach var="customer" items="${listCustomer}">
+      <c:forEach var="customer" items="${list}">
           <tr>
               <td><c:out value="${customer.name}"/> </td>
               <td><c:out value="${customer.dayOfBirth}"/> </td>

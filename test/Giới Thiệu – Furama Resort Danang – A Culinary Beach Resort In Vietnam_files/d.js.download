@@ -1,0 +1,205 @@
+var pwid = '';
+var cwid = '';
+var bB = true;
+var bFlex = false;
+
+var FCity = '';
+var TCity = '';
+var FTLA = '';
+var TTLA = '';
+var	TCityId = '6022969';
+
+var FDate = 'mm/dd/yy';
+var TDate = 'mm/dd/yy';
+var MDate = '';
+var CalS = '';
+var CalE = '';
+
+var FTime = '362';
+var TTime = '362';
+
+var rooms = 1;
+var minR = 1;
+var maxR = 9;
+var minA = 0;
+var maxA = 6;
+var minS = 0;
+var maxS = 6;
+var minC = 0;
+var maxC = 6;
+
+var nR = 1;
+var aRA;
+var aRS;
+var aRC;
+var aRCA;
+var Inf = 'l';
+
+var TL = '';
+var CCl = 'NoPreference';
+var SText = 'Search for flights';
+
+var tl = '';
+var ti = '';
+var te = '';
+var nm = 12;
+
+var arrColors = new Array('Red', 'Lime', 'Yellow', 'Aqua', 'Blue', 'Green', 'White','Silver', 'Teal', 'Orange', 'Pink');
+var arrMN = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July','August', 'September', 'October', 'November', 'December');
+var arrCC = new Array('NoPreference|No Preference','Economy|Economy','Compact|Compact','Midsize|Midsize','Standard|Standard','FullSize|Full Size','Premium|Premium','Luxury|Luxury','Convertible|Convertible','Minivan|Minivan','SUV|Sport Utility Vehicle','SportsCar|Sports Car');
+var arrSR = new Array('0|Show all','10|1 Star or more','20|2 Stars or more','30|3 Stars or more','40|4 Stars or more','50|5 Stars');
+var arrFD = new Array('|-Select from the list-','ATL|Atlanta, GA (ATL-Hartsfield Intl.)','AUS|Austin, TX (AUS-Austin-Bergstrom International Airport)','BWI|Baltimore, MD (BWI-Baltimore Washington)','BOS|Boston, MA (BOS-Logan Intl.)','CLT|Charlotte, NC (CLT-Douglas Intl.)','ORD|Chicago, IL (ORD-O\'Hare)','CLE|Cleveland, OH (CLE-Hopkins Intl.)','CMH|Columbus, OH (CMH-Port Columbus Intl.)','DFW|Dallas, TX (DFW-Dallas-Fort Worth Intl.)','DEN|Denver, CO (DEN-Denver Intl.)','DTW|Detroit, MI (DTW-Wayne County)','FLL|Fort Lauderdale, FL (FLL)','RSW|Fort Myers, FL (RSW-Southwest Florida Regional)','BDL|Hartford, CT (BDL-Bradley Intl.)','HNL|Honolulu, Oahu, HI (HNL-Honolulu Intl.)','IAH|Houston, TX (IAH-Bush Intercontinental)','IND|Indianapolis, IN (IND-Indianapolis Intl.)','JAX|Jacksonville, FL (JAX-Jacksonville Intl.)','MCI|Kansas City, MO (MCI-Kansas City Intl.)','LAS|Las Vegas, NV (LAS-McCarran Intl.)','LAX|Los Angeles, CA (LAX-Los Angeles Intl.)','MIA|Miami, FL (MIA-Miami Intl.)','MSP|Minneapolis, MN (MSP-Minneapolis-St. Paul Intl.)','BNA|Nashville, TN (BNA)','MSY|New Orleans, LA (MSY-New Orleans Intl.)','JFK|New York, NY (JFK-Kennedy)','LGA|New York, NY (LGA-LaGuardia)','EWR|Newark, NJ (EWR-Newark International Airport)','OAK|Oakland, CA (OAK-Oakland Intl.)','SNA|Orange County, CA (SNA-John Wayne Intl.)','MCO|Orlando, FL (MCO-Orlando Intl.)','PHL|Philadelphia, PA (PHL-Philadelphia Intl.)','PHX|Phoenix, AZ (PHX-Sky Harbor Intl.)','PIT|Pittsburgh, PA (PIT-Greater Pittsburgh Intl.)','PDX|Portland, OR (PDX-Portland Intl.)','RDU|Raleigh, NC (RDU-Raleigh Durham Intl.)','RNO|Reno, NV (RNO-Reno-Tahoe International)','SLC|Salt Lake City, UT (SLC-Salt Lake City Intl.)','SAT|San Antonio, TX (SAT-San Antonio Intl.)','SAN|San Diego, CA (SAN-Lindbergh Field)','SFO|San Francisco, CA (SFO-San Francisco Intl.)','SJC|San Jose, CA (SJC-San Jose Intl.)','SEA|Seattle, WA (SEA-Seattle Tacoma)','STL|St. Louis, MO (STL-Lambert-St. Louis Intl.)','TPA|Tampa, FL (TPA-Tampa Intl.)','DCA|Washington, DC (DCA-Ronald Reagan National)','IAD|Washington, DC (IAD-Dulles)','PBI|West Palm Beach, FL (PBI-Palm Beach Intl.)');
+var arrTL = new Array('0,1,10|1 - 10 nights','1,0,0|Weekend','0,2,4|2 - 4 nights','0,3,5|3 - 5 nights','0,5,7|5 - 7 nights','0,7,10|7 - 10 nights','0,1,1|1 night','0,2,2|2 nights','0,3,3|3 nights','0,4,4|4 nights','0,5,5|5 nights','0,6,6|6 nights','0,7,7|7 nights','0,8,8|8 nights','0,9,9|9 nights','0,10,10|10 nights');
+var arrTD = new Array('6023184|Africa','203|Alaska','6050677|Asia','13|Bahamas','20|Bermuda','6023742|Canada - New England','6022969|Caribbean','6023743|Caribbean - Eastern','6023744|Caribbean - Southern','6023745|Caribbean - Western','6022967|Europe','213|Hawaii','6023183|Mediterranean','6023750|Mediterranean - Eastern','6023751|Mediterranean - Western','6050655|Mexico','6049796|Northern Europe','-2|Nowhere (no port stops)','6023753|Panama Canal','6050676|South America','6023738|South Pacific','-3|Transatlantic','-4|Transpacific','6050649|United States & Canada','6023746|US Pacific Coast','-5|World');
+//var arrST = new Array('|- Any State -','AL|AL-Alabama','AK|AK-Alaska','AZ|AZ-Arizona','AR|AR-Arkansas','CA|CA-California','CO|CO-Colorado','CT|CT-Connecticut','DE|DE-Delaware','DC|DC-District of Columbia','FL|FL-Florida','GA|GA-Georgia','HI|HI-Hawaii','ID|ID-Idaho','IL|IL-Illinois','IN|IN-Indiana','IA|IA-Iowa','KS|KS-Kansas','KY|KY-Kentucky','LA|LA-Louisiana','ME|ME-Maine','MD|MD-Maryland','MA|MA-Massachusetts','MI|MI-Michigan','MN|MN-Minnesota','MS|MS-Mississippi','MO|MO-Missouri','MT|MT-Montana','NE|NE-Nebraska','NV|NV-Nevada','NH|NH-New Hampshire','NJ|NJ-New Jersey','NM|NM-New Mexico','NY|NY-New York','NC|NC-North Carolina','ND|ND-North Dakota','OH|OH-Ohio','OK|OK-Oklahoma','OR|OR-Oregon','PA|PA-Pennsylvania','RI|RI-Rhode Island','SC|SC-South Carolina','SD|SD-South Dakota','TN|TN-Tennessee','TX|TX-Texas','UT|UT-Utah','VT|VT-Vermont','VA|VA-Virginia','WA|WA-Washington','WV|WV-West Virginia','WI|WI-Wisconsin','WY|WY-Wyoming');
+var arrST = new Array('|--','AL|AL','AK|AK','AZ|AZ','AR|AR','CA|CA','CO|CO','CT|CT','DE|DE','DC|DC','FL|FL','GA|GA','HI|HI','ID|ID','IL|IL','IN|IN','IA|IA','KS|KS','KY|KY','LA|LA','ME|ME','MD|MD','MA|MA','MI|MI','MN|MN','MS|MS','MO|MO','MT|MT','NE|NE','NV|NV','NH|NH','NJ|NJ','NM|NM','NY|NY','NC|NC','ND|ND','OH|OH','OK|OK','OR|OR','PA|PA','RI|RI','SC|SC','SD|SD','TN|TN','TX|TX','UT|UT','VT|VT','VA|VA','WA|WA','WV|WV','WI|WI','WY|WY');
+//var arrT1 = new Array('12AM|12:00 AM','1AM|1:00 AM','2AM|2:00 AM','3AM|3:00 AM','4AM|4:00 AM','5AM|5:00 AM','6AM|6:00 AM','7AM|7:00 AM','8AM|8:00 AM','9AM|9:00 AM','10AM|10:00 AM','11AM|11:00 AM','12PM|12:00 PM','1PM|1:00 PM','2PM|2:00 PM','3PM|3:00 PM','4PM|4:00 PM','5PM|5:00 PM','6PM|6:00 PM','7PM|7:00 PM','8PM|8:00 PM','9PM|9:00 PM','10PM|10:00 PM','11PM|11:00 PM','361|Morning','362|Any','721|Noon','1081|Evening');
+var arrT1 = new Array('362|Any','12AM|12 AM','1AM|1 AM','2AM|2 AM','3AM|3 AM','4AM|4 AM','5AM|5 AM','6AM|6 AM','7AM|7 AM','8AM|8 AM','9AM|9 AM','10AM|10 AM','11AM|11 AM','12PM|12 PM','1PM|1 PM','2PM|2 PM','3PM|3 PM','4PM|4 PM','5PM|5 PM','6PM|6 PM','7PM|7 PM','8PM|8 PM','9PM|9 PM','10PM|10 PM','11PM|11 PM','361|Morn.','721|Noon','1081|Eve.');
+//var arrT2 = new Array('361|Morning','362|Any','721|Noon','1081|Evening');
+
+var nextFocus = null;
+
+var arrCL = ['-1|Show all','1|Carnival','2|Celebrity','4|Crystal','6|Disney','7|Holland America','8|Norwegian','9|Princess','10|Royal Caribbean'];
+var arrSH = new Array(10);
+arrSH[0] = ['-1|Show all'];
+arrSH[1] = ['-1|Show all','2|Carnival Conquest','3|Carnival Destiny','4|Carnival Ecstasy','5|Carnival Elation','6|Carnival Fantasy','7|Carnival Fascination','160|Carnival Freedom','135|Carnival Glory','9|Carnival Imagination','10|Carnival Inspiration','12|Carnival Legend','147|Carnival Liberty','138|Carnival Miracle','13|Carnival Paradise','14|Carnival Pride','15|Carnival Sensation','16|Carnival Spirit','182|Carnival Splendor','17|Carnival Triumph','139|Carnival Valor','18|Carnival Victory','1|Celebration','8|Holiday'];
+arrSH[2] = ['-1|Show all','176|Azamara Journey','177|Azamara Quest','184|Celebrity Solstice','19|Century','20|Constellation','21|Galaxy','23|Infinity','25|Mercury','24|Millennium','26|Summit'];
+arrSH[3] = ['-1|Show all','99|Crystal Serenity','37|Crystal Symphony'];
+arrSH[4] = ['-1|Show all','38|Disney Magic','39|Disney Wonder'];
+arrSH[5] = ['-1|Show all','40|Amsterdam','179|Eurodam','41|Maasdam','158|Noordam','103|Oosterdam','43|Prinsendam','44|Rotterdam','45|Ryndam','46|Statendam','47|Veendam','48|Volendam','49|Westerdam','50|Zaandam','51|Zuiderdam'];
+arrSH[6] = ['-1|Show all','109|Norwegian Crown','53|Norwegian Dawn','57|Norwegian Dream','174|Norwegian Gem','190|Norwegian Jade','148|Norwegian Jewel','60|Norwegian Majesty','171|Norwegian Pearl','142|Norwegian Spirit','52|Norwegian Star','59|Norwegian Sun','54|Norwegian Wind','140|Pride of Aloha','137|Pride of America','166|Pride of Hawaii'];
+arrSH[7] = ['-1|Show all','134|Caribbean Princess','62|Coral Princess','165|Crown Princess','64|Dawn Princess','132|Diamond Princess','169|Emerald Princess','67|Golden Princess','61|Grand Princess','131|Island Princess','69|Pacific Princess','65|Regal Princess','178|Royal Princess','185|Ruby Princess','133|Sapphire Princess','63|Sea Princess','72|Star Princess','71|Sun Princess','107|Tahitian Princess'];
+arrSH[8] = ['-1|Show all','75|Adventure of the Seas','76|Brilliance of the Seas','83|Empress of the Seas','77|Enchantment of the Seas','78|Explorer of the Seas','157|Freedom of the Seas','79|Grandeur of the Seas','183|Independence of the Seas','130|Jewel of the Seas','80|Legend of the Seas','167|Liberty of the Seas','81|Majesty of the Seas','129|Mariner of the Seas','82|Monarch of the Seas','84|Navigator of the Seas','85|Radiance of the Seas','86|Rhapsody of the Seas','128|Serenade of the Seas','88|Sovereign of the Seas','87|Splendour of the Seas','89|Vision of the Seas','91|Voyager of the Seas'];
+
+
+function GetDefault(E)
+{
+	var t = '';
+	var d = '2';
+	var a = new Array();
+	
+	switch (E)
+	{
+		case 'A':if(cwid == '1' || cwid == '7'){d = '1';}for (var i = minR; i < (maxR + 1); i++){if (i != maxR){t = t + d + ',';}else{t = t + d;}}return t;break;
+		case 'S':for (var i = minR; i < (maxR + 1); i++){if (i != maxR){t = t + '0,';}else{t = t + '0';}}return t;break;
+		case 'C':for (var i = minR; i < (maxR + 1); i++){if (i != maxR){t = t + '0,';}else{t = t + '0';}}return t;break;
+		case 'CA':
+			for (var i = 1; i < (maxC + 1); i++){if (i != maxC){t = t + '-1,';}	else{t = t + '-1';}};
+			for (var i = 0; i < maxR; i++){a[i] = t.split(',');}return a;break;
+		case 'FT':return '362||11AM|361|361|11AM|362||';break;
+		case 'TT':return '362||11AM|1081|1081|11AM|362||';break;
+	}
+}
+
+var sb = new SB();
+var sb1 = new SB();
+
+function RemG(el)
+{
+	var n = el.id.substr(3);
+	switch (el.id.substr(0,3))
+	{
+		case 'fcy':FCity = el.value;DE('FCity').value = FCity;if(DE("LsFOverride")){DE("LsFOverride").value="true";}break;
+		case 'tcy':if(n == ''){TCity = el.value;DE('TCity').value = TCity;if(DE("LsTOverride")){DE("LsTOverride").value="true";}}break;
+		case 'tci':TCityId = el.value;DE('TCityId').value = TCityId;break;
+		case 'fct':FTLA = el.value;DE('FTLA').value = FTLA;break;
+		case 'tct':TTLA = el.value;DE('TTLA').value = TTLA;break;
+		case FDateID:FDate = el.value;DE('FDate').value = FDate;break;
+		case TDateID:TDate = el.value;DE('TDate').value = TDate;break;
+		case 'mon':MDate = el.value;DE('MDate').value = MDate;break;
+		case 'ftt':FTime = el.value;DE('FTime').value = FTime;break;
+		case 'ttt':TTime = el.value;DE('TTime').value = TTime;break;
+		case 'trl':TL = el.value;DE('TL').value = TL;break;
+		case 'ccl':CCl = el.value;DE('CarC').value = CCl;break;
+		case 'rrr':nR = el.options[el.selectedIndex].value;DE('nR').value = nR;break;
+		case 'rad':aRA[n - 1] = el.options[el.selectedIndex].value;DE('aRA').value = aRA.join('|');break;
+		case 'rse':aRS[n - 1] = el.options[el.selectedIndex].value;DE('aRS').value = aRS.join('|');break;
+		case 'rch':aRC[n - 1] = el.options[el.selectedIndex].value;DE('aRC').value = aRC.join('|');break;
+		case 'rca':n = n.split('_');aRCA[n[0] - 1][n[1] - 1] = el.options[el.selectedIndex].value;DE('aRCA').value = aRCA.join('|');break;
+		case 'rIS':if (el.checked){Inf = 's';}DE('Inf').value = Inf;break;
+		case 'rIL':if (el.checked){Inf = 'l';}DE('Inf').value = Inf;break;
+	}
+}
+
+function GetSavedValuesG()
+{
+	var v;
+	v = DE('FCity').value;if (v != '') {FCity = v;}
+	v = DE('TCity').value;if (v != '') {TCity = v;}
+	v = DE('TCityId').value;if (v != '') {TCityId = v;}
+	v = DE('FTLA').value;if (v != '') {FTLA = v;}
+	v = DE('TTLA').value;if (v != '') {TTLA = v;}
+	v = DE('FDate').value;if (v != '') {FDate = v;}
+	v = DE('TDate').value;if (v != '') {TDate = v;}
+	v = DE('MDate').value;if (v != '') {MDate = v;}
+	v = DE('FTime').value;if (v != '') {FTime = v;}
+	v = DE('TTime').value;if (v != '') {TTime = v;}
+	v = DE('CarC').value;if (v != '') {CCl = v;}
+	v = DE('nR').value;if (v != '') {nR = v;}
+	v = DE('aRA').value;if (v != '') {aRA = v.split('|');}
+	v = DE('aRS').value;if (v != '') {aRS = v.split('|');}
+	v = DE('aRC').value;if (v != '') {aRC = v.split('|');}
+	v = DE('aRCA').value;if (v != '') {aRCA = v.split('|');for (var j = 0; j < aRCA.length; j++){aRCA[j] = aRCA[j].split(',');}}
+	v = DE('Inf').value;if (v != '') {Inf = v;}
+	CalS = DE('CalS').value;
+	CalE = DE('CalE').value;
+
+	var sdt = new Date(CalS);
+	var edt = new Date(CalE);
+	var j = 0;
+	var sm = sdt.getMonth() + 1;
+	var em = 12;
+	if(sdt.getYear() == edt.getYear())
+	{
+	    em = edt.getMonth() + 1;
+	}
+	for (var i = sm;i <= em;i++)
+	{
+	    j = j + 1;
+	}
+	if(edt.getYear() > sdt.getYear())
+	{
+	    for (var i = 1;i <= edt.getMonth() + 1;i++)
+	    {
+	        j = j + 1;
+	    }
+	}
+    if(j > 0){nm = j;}
+}
+
+function GetDestination(){
+	var sDestination;
+	if(DE("LsTOverride") && DE("LsTOverride").value == ""){
+		switch(cwid){
+			case "1":
+				sDestination = DE("LsFlightDestName").value;
+				break;
+			case "2":
+				switch(cst){
+					case "1":sDestination = DE("LsAtlas").value;break;
+					case "2":sDestination = DE("LsFlightDestName").value;break;
+					case "3":sDestination = DE("LsHotel").value;break;
+				}
+				break;
+			case "3":
+				switch(cst){
+					case "2":sDestination = DE("LsFlightDestName").value;break;
+					case "3":sDestination = DE("LsHotel").value;break;
+				}
+				break;
+			case "4":
+			case "5":
+			case "6":
+			case "7":
+				sDestination = DE("LsAtlas").value;
+				break;
+			case "9":
+				sDestination = DE("LsHotel").value;
+				break;
+		}
+	}
+	else{
+		sDestination = DE("TCity").value;
+	}
+	return sDestination;
+}

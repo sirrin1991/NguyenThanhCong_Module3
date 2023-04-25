@@ -1,0 +1,13 @@
+			@font-face {
+				font-family: 'furamafont';
+				font-style: normal;
+				src: url('/wp-content/uploads/useanyfont/181017073714FuramaFont.eot');
+				src: local('furamafont'), url('/wp-content/uploads/useanyfont/181017073714FuramaFont.eot') format('embedded-opentype'), url('/wp-content/uploads/useanyfont/181017073714FuramaFont.woff') format('woff');
+			}
+            
+            .furamafont{font-family: 'furamafont' !important;}
+            
+						body, h5, h6, blockquote, li, a{
+					font-family: 'furamafont' !important;
+				}
+		

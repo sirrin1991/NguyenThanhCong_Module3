@@ -9,6 +9,7 @@ import java.util.List;
 
 public class ServiceRepositoryImpl implements ServiceRepository {
     ProductRepository productRepository = new ProductRepositoryImpl();
+
     @Override
     public List<Product> findAll() {
         return productRepository.findAll();

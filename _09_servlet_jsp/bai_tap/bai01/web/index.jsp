@@ -31,7 +31,7 @@
           </div>
           <div class="row mt-5">
               <div class="col-12">
-                  <form class="bg-info" action="/calculate" method="get">
+                  <form class="bg-info" action="/calculate" >
                       <div class="form-row">
                           <div class="col-12 mt-5">
                               <input type="text" class="form-control" placeholder="Product Description" name="desc">

@@ -22,7 +22,7 @@
 <div class="container">
     <div class="row">
         <div class="col-6">
-            <form action="/calculation" class="text-primary">
+            <form action="/calculation" class="text-primary" >
                 <div class="row">
                     <div class="form-group">
                         <label for="num1">Number 1</label>

@@ -3,8 +3,6 @@ package model.repository.imp;
 import model.bean.Users;
 import model.repository.BaseRepository;
 import model.repository.UsersRepository;
-
-
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -20,14 +18,13 @@ public class UsersRepositoryImpl implements UsersRepository {
         try{
             Statement statement = this.baseRepository.getConnection().createStatement();
             ResultSet resultSet = statement.executeQuery("select * from users");
-            Users users = null;
+            Users users ;
             while(resultSet.next()) {
                 users = new Users();
-                users.setId(Integer.parseInt(resultSet.getString("id")));
+                users.setId(resultSet.getInt("id"));
                 users.setName(resultSet.getString("name"));
                 users.setEmail(resultSet.getString("email"));
                 users.setAddress(resultSet.getString("address"));
-
                 list.add(users);
             }
 

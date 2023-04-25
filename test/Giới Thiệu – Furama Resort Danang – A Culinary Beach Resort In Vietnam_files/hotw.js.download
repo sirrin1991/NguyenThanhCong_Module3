@@ -1,0 +1,161 @@
+var Street = '';
+var TCity1 = '';
+var State = '';
+var Zip = '';
+var HName = '';
+var StarR = '0';
+
+var pst = '';
+var cst = '';
+var bB = true;
+//var bC = true;
+
+//window.onload = I;
+document.onclick = HCal;
+
+function hw(id)
+{
+	cst = DE('typ').options[DE('typ').selectedIndex].value;
+	if ((id == pwid) && (pst == cst)){return;}
+	cwid = id;
+	DE('r' + id).checked = true;
+    SO();
+	SetSearchType();
+	SetST(cwid);
+	SetTeleMessage();
+	if(cwid != '2'){SH(DE('divWrs'),0);SH(DE('divWOptions'),0);}else{SH(DE('divWrs'),1);SH(DE('divWOptions'),1);}
+	BuildFields();
+	pwid = cwid;
+	pst = cst;
+}
+
+function BuildFields()
+{
+	switch (pwid){case '4':case '5':switch (cwid){case '4':case '5':if(!bB){pwid = cwid;return;};break;}break;}
+	if (bB){GetSavedValues();}
+    SO();
+	SetIH('divWFields',GetFieldsHTML());
+	BuildRASC();
+	if (bB && DE('ao').value == '1'){SetAO();}
+	bB = false;
+}
+
+function BuildRASC()
+{
+	if(pwid == cwid){return;}
+	switch (pwid){case '4':case '5':switch (cwid){case '1':case '4':case '5':if (bB){return ''};break;}break;}
+	var n = 0;
+	switch (cwid)
+	    {
+	        case '2':n = 2;maxC=6;break;
+	        case '4':case '5':case '6':n = 2;maxC=5;break;
+	        default:n = 0;break;
+	    }
+	var s = true;
+	if (cwid == '2' || cwid == '6'){s = false;minA = 1;}else{minA = 0;}
+	if (cwid == '2'){maxR = 9;}else{maxR = 3;}
+	SetRASC(n,s);
+}
+
+function GetFieldsHTML()
+{
+	var s = '';
+    var t = '';   
+	switch (cwid)
+	{
+		case '2':
+	        switch (cst)
+	        {
+		        case '1':s = GetGL('tcy','Destination:') + '<br/>';break;
+		        case '2':s = GetGL('tcy','Airport name: (Ex. New York, JFK):') + '<br/>';break;
+		        case '3':s = GetGL('tcy','Attraction name: (Ex. Statue of Liberty):') + '<br/>';break;
+		        case '4':s = GetGL('tsr','Street address or intersection:') + '<br/>';break;
+	        }
+            t = t + '<div class="bl1">';
+            if(cst == '4'){t = t + s + GetGI('tsr',Street,'large','',' onfocus="HCal();this.select();" onchange="Rem(this);"','255');}
+            else{t = t + s + GetGI('tcy',GetDestination(),'large','',' onfocus="HCal();this.select();" onchange="Rem(this);"','100');}
+            t = t + '</div>';
+            if(cst == '4')
+            {
+		        t = t + '<div class="bl1">';
+		        t = t + '<div class="flmed">';
+		        t = t + '<div class="fl">' + GetGL('tct','City:') + '<br/>' + GetGI('tct',TCity1,'','',' onfocus="HCal();this.select();" onchange="Rem(this);"','100') + '</div>';
+		        t = t + '</div>';
+		        t = t + '<div class="frmed">';
+		        t = t + '<div class="fl">' + GetGL('tst','State:') + '<br/>' + GetDD('tst',arrST,State,'small','',' onchange="Rem(this);"') + '</div>';
+		        t = t + '<div class="fr">' + GetGL('tzp','ZIP code:') + '<br/>' + GetGI('tzp',Zip,'small','',' onfocus="HCal();this.select();" onchange="Rem(this);"','5') + '</div>';
+		        t = t + '</div>';
+		        t = t + '</div>';
+            }
+            t = t + '<div class="bl1">';
+            t = t + '<div class="flmed">';
+            t = t + GetGL(FDateID,'Check-in:') + '<br/>' + GetDt('H','F');
+            t = t + '</div>';
+            t = t + '<div class="frmed">';
+            t = t + GetGL(TDateID,'Check-out:') + '<br/>' + GetDt('H','T');
+            t = t + '</div>';
+            t = t + '</div>';
+            t = t + '<div class="clearer"></div>';
+		    break;
+        case '4':case '5':t = GetFields('F');break;
+        case '6':t = GetFields('HC');break;
+		default:t = '';break;
+	}
+	return t;
+}
+
+function SetAO()
+{
+    DE('ao').value = '1';
+	SetIH('divO1',GetAOHTML());
+}
+
+function GetAOHTML()
+{
+	sb.Reset();
+	sb.Concat('<div class="bl1" style="padding-top:3px;">');
+	sb.Concat('<div class="flmed">' + GetGL('hnm','Hotel name:') + '<br/>' + GetGI('hnm',HName,'','',' onfocus="HCal();this.select();" onchange="Rem(this);"','80') + '</div>');
+	sb.Concat('<div class="frmed"><a href="/pub/agent.dll?qscr=hgen&hfnm=H_VHW_default.htx&rhtx=HTX_HOTVSRCH#class">Hotel class:</a><br/>' + GetDD('str',arrSR,StarR,'','',' onchange="Rem(this);"') + '</div>');
+	sb.Concat('</div>');
+    sb.Concat('<div class="clearer"></div>');
+	return sb.GetValue();
+}
+
+function SetST(id)
+{
+	switch (id)
+	{
+		case '2':SText = rooms == 9 ? 'Request 9+ hotel rooms' : 'Search for hotel';break;
+		case '4':SText = 'Search for hotels + flights';break;
+		case '5':SText = 'Search for hotels + flights + cars';break;
+		case '6':SText = 'Search for hotels + cars';break;
+	}
+	SetSTG();
+}
+
+function Rem(el)
+{
+	RemG(el);
+	var n = el.id.substr(3);
+	switch (el.id.substr(0,3))
+	{
+		case 'tsr':Street = el.value;DE('Street').value = Street;break;
+		case 'tct':TCity1 = el.value;DE('TCity1').value = TCity1;break;
+		case 'tst':State = el.value;DE('State').value = State;break;
+		case 'tzp':Zip = el.value;DE('Zip').value = Zip;break;
+		case 'hnm':HName = el.value;DE('HName').value = HName;break;
+		case 'str':StarR = el.value;DE('StarR').value = StarR;break;
+	}
+}
+
+function GetSavedValues()
+{
+	GetSavedValuesG();
+	var v;
+	v = DE('Street').value;if (v != '') {Street = v;}
+	v = DE('TCity1').value;if (v != '') {TCity1 = v;}
+	v = DE('State').value;if (v != '') {State = v;}
+	v = DE('Zip').value;if (v != '') {Zip = v;}
+	v = DE('HName').value;if (v != '') {HName = v;}
+	v = DE('StarR').value;if (v != '') {StarR = v;}
+}

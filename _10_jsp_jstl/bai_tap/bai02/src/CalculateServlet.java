@@ -34,16 +34,21 @@ public class CalculateServlet extends HttpServlet {
                 request.setAttribute("result",notice);
                 break;
             case "div":
-                try{
-                    if(num2 == 0){
-                        throw  new ArithmeticException();
-                    }else {
-                        result = num1 / num2;
-                        notice = String.valueOf(result);
-                        request.setAttribute("result",notice);
-                    }
-                }catch (ArithmeticException e){
-                    notice = "ERROR DIVISION BY 0";
+//                try{
+//                    if(num2 == 0){
+//                        throw  new ArithmeticException();
+//                    }else {
+//                        result = num1 / num2;
+//                        notice = String.valueOf(result);
+//                        request.setAttribute("result",notice);
+//                    }
+//                }catch (ArithmeticException e){
+//                    notice = "ERROR DIVISION BY 0";
+//                    request.setAttribute("result",notice);
+//                    request.getRequestDispatcher("result.jsp").forward(request,response);
+//                }
+                if(num2 == 0){
+                    notice ="ERROR DIVISION BY 0";
                     request.setAttribute("result",notice);
                     request.getRequestDispatcher("result.jsp").forward(request,response);
                 }

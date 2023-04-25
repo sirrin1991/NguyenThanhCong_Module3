@@ -8,7 +8,7 @@ public interface UsersService {
     List<Users> findAll();
     List<Users> sort();
     Users findById(int id);
-    boolean save(Users users);
+    String save(Users users);
     void update(int id,Users users);
     void remove(int id);
     List<Users> searchByName(String name);

@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="c12g-jdbc-crud:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/c12g_jdbc_crud_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="c12g-jdbc-crud/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="c12g-jdbc-crud" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jstl-1.2" />
+          <element id="library" level="project" name="mysql-connector-java-8.0.11" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
